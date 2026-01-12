@@ -1,5 +1,5 @@
-site_name: EGR 314 Individual Data Sheet
-site_url: https://embedded-systems-design.github.io/EGR314IndividualDataSheet
+site_name: EGR 314 - Jacob Alger Datasheet
+site_url: https://embedded-systems-design.github.io/EGR314DataSheetTemplate
 repo_url: https://github.com/embedded-systems-design/EGR314DataSheetTemplate
 edit_uri: edit/main/docs/
 theme:
