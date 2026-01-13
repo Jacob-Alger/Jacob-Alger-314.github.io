@@ -15,7 +15,7 @@ for<br>
 </center>
 
 ## Introduction
-Testing build
+
 * **This needs to be updated so that a reader gets an idea of the purpose of this datasheet.**
 
 ### Project Summary
