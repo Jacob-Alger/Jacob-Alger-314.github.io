@@ -11,7 +11,7 @@ theme:
   font:
     text: Roboto
   logo: static/logo314.svg
-  favicon: static/logo314.png
+  favicon: static/logo-314.png
 
   features:
     - navigation.tabs
