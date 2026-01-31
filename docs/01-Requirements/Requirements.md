@@ -6,6 +6,7 @@ title: Human Machine Interface Module Requirements
 The following table, *Table 1*, documents the requirements the Human Machine Interface (HMI) module must meet to be considered a success for my team and the class. My subsystem needs to, at minimum, allow the user to control the device in direct-drive mode, read the sensor data in text and graphical form, and toggle GPIO pins across the entire system. The HMI will take the form of a controller separate from the rover and will also interact with the communication module to control the rover and receive sensor data. Whether this takes the form of two communication modules, with the HMI having a slave module, or the controller serving as the master system and the rover having a slave module, is still unknown as our team learns more about wireless communication.
 
 *Table 1: HMI Subsystem Requirements*
+
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
 | Surface mounted, 3.3V switching power regulator | 3.2 Volts | 3.3 Volts | No |
