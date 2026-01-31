@@ -26,7 +26,7 @@
 
     
       
-        <title>Module's Requirements - EGR 314 - Jacob Alger Datasheet</title>
+        <title>Human Machine Interface Module's Requirements - EGR 314 - Jacob Alger Datasheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#module-requirements" class="md-skip">
+        <a href="#hmi-requirements" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Module's Requirements
+              Human Machine Interface Module's Requirements
             
           </span>
         </div>
@@ -471,7 +471,7 @@
           
   
   <span class="md-ellipsis">
-    Module's Requirements
+    Human Machine Interface Module's Requirements
   </span>
   
 
@@ -482,7 +482,7 @@
         
   
   <span class="md-ellipsis">
-    Module's Requirements
+    Human Machine Interface Module's Requirements
   </span>
   
 
@@ -502,9 +502,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-requirements" class="md-nav__link">
+  <a href="#hmi-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Module Requirements
+      HMI Requirements
     </span>
   </a>
   
@@ -791,9 +791,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-requirements" class="md-nav__link">
+  <a href="#hmi-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Module Requirements
+      HMI Requirements
     </span>
   </a>
   
@@ -822,10 +822,10 @@
   
 
 
-  <h1>Module's Requirements</h1>
+  <h1>Human Machine Interface Module's Requirements</h1>
 
-<h2 id="module-requirements">Module Requirements</h2>
-<p>The following sections document the requirements that the this module need to fulfills to .....</p>
+<h2 id="hmi-requirements">HMI Requirements</h2>
+<p>The following sections document the requirements the Human Machine Interface (HMI) module must meet to be considered a success for my team and the class. My subsystem needs to, at minimum, allow the user to control the device in direct-drive mode, read the sensor data in text and graphical form, and toggle GPIO pins across the entire system. The HMI will take the form of a controller separate from the rover and will also interact with the communication module to control the rover and receive sensor data. Whether this takes the form of two communication modules, with the HMI having a slave module, or the controller serving as the master system and the rover having a slave module, is still unknown as our team learns more about wireless communication.</p>
 <table>
 <thead>
 <tr>
@@ -837,7 +837,7 @@
 </thead>
 <tbody>
 <tr>
-<td>Surface mounted, 3.3V switching power regulatore</td>
+<td>Surface mounted, 3.3V switching power regulator</td>
 <td>3.2 Volts</td>
 <td>3.3 Volts</td>
 <td style="text-align: center;">No</td>
@@ -845,20 +845,38 @@
 <tr>
 <td>Surface mounted microcontroller</td>
 <td>1 PIC or ESP</td>
-<td>8-bit PIC</td>
+<td>ESP</td>
 <td style="text-align: center;">No</td>
 </tr>
 <tr>
 <td>Wireless Communication</td>
-<td>Able to send or receive a Wi-Fi data</td>
-<td>Send and receive Wi-Fi Data to MQTT</td>
+<td>Able to send or receive data</td>
+<td>Send movement instructions with less than half-second delay and receive sensor data in less than 15 seconds</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td>Movement Controls</td>
+<td>Enough Buttons to move rover and control screen</td>
+<td>D-Pad and 4 selecting buttons</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td>Movement Controls</td>
+<td>Analog Stick that can move the rover in 4 directions</td>
+<td>Full analog movement for precise control</td>
 <td style="text-align: center;">Yes</td>
 </tr>
 <tr>
-<td><em>Rest are items your modules needs to support the task you are covering for the team's device.</em></td>
-<td>---</td>
-<td>---</td>
-<td style="text-align: center;"><strong>NO</strong></td>
+<td>OLED Screen</td>
+<td>Able to display 1 sensor's data at a time</td>
+<td>Can show a summary of all sensors, in both Numerical and Graphical Form</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td>Data Management</td>
+<td>Can remember previous measurement for comparison</td>
+<td>Can export all data in file format</td>
+<td style="text-align: center;">Yes</td>
 </tr>
 </tbody>
 </table>
