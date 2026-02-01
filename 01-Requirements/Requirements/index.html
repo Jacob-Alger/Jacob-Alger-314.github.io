@@ -26,7 +26,7 @@
 
     
       
-        <title>Human Machine Interface Module Requirements - EGR 314 - Jacob Alger Datasheet</title>
+        <title>Module Requirements - EGR 314 - Jacob Alger Datasheet</title>
       
     
     
@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#module-requirements" class="md-skip">
+        <a href="#human-machine-interface-module-requirements" class="md-skip">
           Skip to content
         </a>
       
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Human Machine Interface Module Requirements
+              Module Requirements
             
           </span>
         </div>
@@ -471,7 +471,7 @@
           
   
   <span class="md-ellipsis">
-    Human Machine Interface Module Requirements
+    Module Requirements
   </span>
   
 
@@ -482,7 +482,7 @@
         
   
   <span class="md-ellipsis">
-    Human Machine Interface Module Requirements
+    Module Requirements
   </span>
   
 
@@ -502,9 +502,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-requirements" class="md-nav__link">
+  <a href="#human-machine-interface-module-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Module Requirements
+      Human Machine Interface Module Requirements
     </span>
   </a>
   
@@ -791,9 +791,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#module-requirements" class="md-nav__link">
+  <a href="#human-machine-interface-module-requirements" class="md-nav__link">
     <span class="md-ellipsis">
-      Module Requirements
+      Human Machine Interface Module Requirements
     </span>
   </a>
   
@@ -822,9 +822,9 @@
   
 
 
-  <h1>Human Machine Interface Module Requirements</h1>
+  <h1>Module Requirements</h1>
 
-<h2 id="module-requirements">Module Requirements</h2>
+<h2 id="human-machine-interface-module-requirements">Human Machine Interface Module Requirements</h2>
 <p>The following table, <em>Table 1</em>, documents the requirements the Human Machine Interface (HMI) module must meet to be considered a success for my team and the class. My subsystem needs to, at minimum, allow the user to control the device in direct-drive mode, read the sensor data in text and graphical form, and toggle GPIO pins across the entire system. The HMI will take the form of a controller separate from the rover and will also interact with the communication module to control the rover and receive sensor data. Whether this takes the form of two communication modules, with the HMI having a slave module, or the controller serving as the master system and the rover having a slave module, is still unknown as our team learns more about wireless communication. </p>
 <p><em>Table 1</em> below showcases every requirement my module needs to meet, and clarifies the minimum success level, the target measurement, and whether the goal is a stretch goal or not. The stretch goals are requirements that would be nice to have, but are not needed for the subsystem to meet the baseline requirements.</p>
 <p><em>Table 1: HMI Subsystem Requirements</em></p>
@@ -845,9 +845,21 @@
 <td style="text-align: center;">No</td>
 </tr>
 <tr>
+<td>Barrel Jack Adapter Power supply</td>
+<td>Unregulated power</td>
+<td>9 Volts</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
+<td>Jumper that switches from Barrel Jack to Battery Power</td>
+<td>Manual Switch</td>
+<td>Header pin that uses connector to switch</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr>
 <td>Surface mounted microcontroller</td>
 <td>1 PIC or ESP</td>
-<td>ESP</td>
+<td>ESP controller that can manage every requirement</td>
 <td style="text-align: center;">No</td>
 </tr>
 <tr>
