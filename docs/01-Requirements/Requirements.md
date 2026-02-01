@@ -3,7 +3,9 @@ title: Human Machine Interface Module Requirements
 ---
 
 ## Module Requirements
-The following table, *Table 1*, documents the requirements the Human Machine Interface (HMI) module must meet to be considered a success for my team and the class. My subsystem needs to, at minimum, allow the user to control the device in direct-drive mode, read the sensor data in text and graphical form, and toggle GPIO pins across the entire system. The HMI will take the form of a controller separate from the rover and will also interact with the communication module to control the rover and receive sensor data. Whether this takes the form of two communication modules, with the HMI having a slave module, or the controller serving as the master system and the rover having a slave module, is still unknown as our team learns more about wireless communication.
+The following table, *Table 1*, documents the requirements the Human Machine Interface (HMI) module must meet to be considered a success for my team and the class. My subsystem needs to, at minimum, allow the user to control the device in direct-drive mode, read the sensor data in text and graphical form, and toggle GPIO pins across the entire system. The HMI will take the form of a controller separate from the rover and will also interact with the communication module to control the rover and receive sensor data. Whether this takes the form of two communication modules, with the HMI having a slave module, or the controller serving as the master system and the rover having a slave module, is still unknown as our team learns more about wireless communication. 
+
+*Table 1* below showcases every requirement my module needs to meet, and clarifies the minimum success level, the target measurement, and whether the goal is a stretch goal or not. The stretch goals are requirements that would be nice to have, but are not needed for the subsystem to meet the baseline requirements.
 
 *Table 1: HMI Subsystem Requirements*
 
