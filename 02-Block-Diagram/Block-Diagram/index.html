@@ -26,7 +26,7 @@
 
     
       
-        <title>Module's Block Diagram - EGR 314 - Jacob Alger Datasheet</title>
+        <title>Module Block Diagram - EGR 314 - Jacob Alger Datasheet</title>
       
     
     
@@ -125,7 +125,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Module's Block Diagram
+              Module Block Diagram
             
           </span>
         </div>
@@ -517,7 +517,7 @@
           
   
   <span class="md-ellipsis">
-    Module's Block Diagram
+    Module Block Diagram
   </span>
   
 
@@ -528,7 +528,7 @@
         
   
   <span class="md-ellipsis">
-    Module's Block Diagram
+    Module Block Diagram
   </span>
   
 
@@ -557,9 +557,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Block Diagram
     </span>
   </a>
   
@@ -809,9 +809,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
-      Example Block Diagram
+      Block Diagram
     </span>
   </a>
   
@@ -840,21 +840,15 @@
   
 
 
-  <h1>Module's Block Diagram</h1>
+  <h1>Module Block Diagram</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...</p>
-<p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
-<h2 id="example-block-diagram">Example Block Diagram</h2>
-<p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Individual-Block-Diagram-314.drawio.png" data-desc-position="bottom"><img alt="Example of Indivial Block diagram " src="../Individual-Block-Diagram-314.drawio.png"></a></p>
+<p>This block diagram illustrates the major components of my Human Machine Interface (HMI) Subsystem to show the connections and types of signals used. My subsystem will primarily feature a button array to control the rover and an OLED screen to display sensor data, parameters, and the status of other subsystems. <br><br>
+The subsystem features a DC barrel jack power supply and jumpers to switch to battery power via the 8-pin connectors. There are two connectors, an upstream and a downstream, that will send data into and out of my board. The connectors will also be used to share battery power and provide a common ground for all subsystems. <br><br>
+My ESP32 will be programmed via the USB port on the DevKit, as shown in the Block Diagram. The ESP32 is also capable of I2C serial communication with the OLED screen, wireless communication via the built-in module, and other useful peripherals for my subsystem. <br><br>
+Since I am making the HMI, my subsystem will most likely be a separate controller, so it is also capable of using Bluetooth to communicate with the Communication subsystem. This connection is subject to change as my team learns more about communication systems and how to implement them. <br><br></p>
+<h2 id="block-diagram">Block Diagram</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Individual-Block-Diagram-314.drawio.png" data-desc-position="bottom"><img alt="HMI Indivial Block diagram" src="../Individual-Block-Diagram-314.drawio.png"></a></p>
 
 
 
