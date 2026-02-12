@@ -25,7 +25,7 @@ The following sections are the selected major components necessary for  .....
 
 2. LM2675MX-3.3/NOPB
 
-    ![LM2675MX-3.3/NOPB](../03-Component-Selection/VoltageRegulator/LM2675MX-3.3-NOPB.webp)
+    ![LM2675MX-3.3/NOPB](../03-Component-Selection/VoltageRegulators/LM2675MX-3.3-NOPB.webp)
 
     * $1/each
     * [link to product]()
