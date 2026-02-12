@@ -10,9 +10,9 @@ The following sections are the selected major components necessary for  .....
 
 ### **Switching Voltage Regulator**
 
-1. Model Number
+1. LM2575-3.3WU-TR
 
-    ![](image1.png)
+    ![LM2575-3.3WU-TR](../03-Componenet-Selection/VoltageRegulators/LM2575-3.3WU-TR.webp)
 
     * $1/each
     * [link to product]()
