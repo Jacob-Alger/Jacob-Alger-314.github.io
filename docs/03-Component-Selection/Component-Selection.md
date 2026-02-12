@@ -162,6 +162,7 @@ The following sections are the selected major components necessary for my Human-
 | 3.3–5 V operation flexibility | Power varies with brightness/content |
 | I²C/SPI/parallel interface options | Limited temp range vs. industrial |
 | Manageable ~20 mA typical current | Monochrome-only UI |
+| Worked with in class, able to confirm function | |
 
 #### 3. MDOB048064AV-WI
 
