@@ -7,6 +7,7 @@ title: Module's Microcontroller Selection
 * **ESP32-S3-WROOM-1-N4**: 36 GPIOs, *“ESP32-S3 integrates a rich set of peripherals including SPI, LCD, Camera interface, UART, I2C, I2S, remote control, pulse counter, LED PWM, USB Serial/JTAG, MCPWM, SD/MMC host controller, TWAI® controller (compatible with ISO 11898-1, i.e., CAN Specification 2.0), ADC, touch sensor, and temperature sensor. It also includes a full-speed USB 2.0 On-The-Go (OTG) interface to enable USB communication.”*
 
 *Table 1: ESP32 Info*
+
 | ESP Info                                      | Answer | Help  |
 | --------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------- |
 | Model                                         | ESP32-S3-WROOM-1-N4      |   |
@@ -34,9 +35,11 @@ title: Module's Microcontroller Selection
 ## Pinout Diagram and Table
 
 ![Pinout Diagram](../04-Microcontroller-Selection/ESP32-S3-WROOM-1-N4_PinoutFigure.png)
+
 **Figure 1: Pinout Diagram sourced from ESP32-S3-WROOM-1-N4 Datasheet.**
 
 *Table 2: Peripherals and Pins*
+
 | Peripheral               | Pins Used                                                                 | Notes |
 |---------------------------|--------------------------------------------------------------------------|-------|
 | UART0                     | RXD0 (36), TXD0 (37)                                                     | Default hardware UART0 RX/TX on module; used for serial console/programming by default. UART0 hardware flow control can map to IO15/IO16 via IO MUX but is generally routed via the GPIO matrix if needed. |
