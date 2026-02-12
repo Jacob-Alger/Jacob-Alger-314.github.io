@@ -33,7 +33,8 @@ title: Module's Microcontroller Selection
 
 ## Pinout Diagram and Table
 
-![Pinout Diagram](#)
+![Pinout Diagram](../04-Microcontroller-Selection/ESP32-S3-WROOM-1-N4_PinoutFigure.png)
+**Figure 1: Pinout Diagram sourced from ESP32-S3-WROOM-1-N4 Datasheet.**
 
 *Table 2: Peripherals and Pins*
 | Peripheral               | Pins Used                                                                 | Notes |
