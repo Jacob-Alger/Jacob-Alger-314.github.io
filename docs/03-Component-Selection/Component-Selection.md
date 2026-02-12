@@ -2,9 +2,9 @@
 title: Module's Selected Major Components
 ---
 
-# Module's Selected Major Components
+# HMI Subsystem Major Components
 
-The following sections are the selected major components necessary for  .....
+The following sections are the selected major components necessary for my Human-Machine Interface Subsystem. I need to be able to regulate input power using a 3.3-V Switching Regulator from a Barrel Jack Adapter, powered by a Wall Supply AC/DC barrel jack cord. Then, I need to use the regulated 3.3 Volts to power an OLED Screen to display the data and control a microcontroller, which will use I2C to communicate with the OLED and interpret digital inputs from push buttons, allowing the user to control the rover and navigate the menus. The following page details my product selection process of determining which of the three selected components is the best for my subsystem.
 
 ## Power Management
 
@@ -17,11 +17,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)
 
-| Pros                                      | Cons                                                             |
-| ----------------------------------------- | ---------------------------------------------------------------- |
-| Inexpensive                               | Requires external components and support circuitry for interface |
-| Compatible with PSoC                      | Needs special PCB layout.                                        |
-| Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| ~1 A buck output; suitable for MCU + display | Low switching freq → large L/C components |
+| Wide input range; stable SMPS regulation | Requires careful PCB layout & filtering |
+| Good efficiency vs. linear regulators | Higher quiescent current than modern parts |
 
 #### 2. LM2675MX-3.3/NOPB
 
@@ -30,11 +30,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Higher freq (~260 kHz) → smaller passives | Needs external L, diode, caps |
+| ~1 A regulated 3.3 V output | EMI/layout sensitivity |
+| Better efficiency than linear solutions | Non-synchronous → lower light-load efficiency |
 
 #### 3. LTC3621EMS8E-3.3#PBF
 
@@ -43,11 +43,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3621EMS8E-3-3-PBF/4840601)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Wide Vin (~2.7–17 V), ~1 A output | Limited scalability beyond ~1 A |
+| Synchronous, very low IQ, high efficiency | More complex control/features |
+| High freq (≈1–2.25 MHz) → very small passives | Higher cost vs. legacy regulators |
 
 ### **Barrel Jack Adapter**
 
@@ -58,11 +58,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148S/20374233)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Common 5.5 mm/2.1 mm DC input | ~2 A current limit |
+| SMT footprint → compact PCB | SMT weaker mechanically than TH |
+| Suitable for low-power 12 V systems | 12 V-class only |
 
 #### 2. FC68148ST
 
@@ -71,11 +71,12 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148ST/26794679)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Standard 2.1 mm, ~12 V/2 A rating | Same ~2 A limit |
+| SMT, compact, automated assembly | Reduced mechanical robustness |
+| Defined insertion force → predictable feel | Basic connector; no locking/high-power features |
+
 
 #### 3. FC68145S
 
@@ -84,11 +85,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68145S/20374234)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Very compact 1.3 mm barrel size | Very low current (~1 A) |
+| SMT suitable for small PCBs | Less common plug compatibility |
+| Works with low-voltage DC adapters | Lower mechanical durability (SMT) |
 
 ### **Power Supply**
 
@@ -99,11 +100,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/jameco-electronics/DDU120150R/25966445)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| 12 V, 1.5 A (18 W) → enough for 3.3 V rail | 120 VAC-only input |
+| Safety-approved wall adapter | Limited power headroom |
+| Standard 2.1 mm barrel + long cable | Narrow temp range (≈-10 → 40 °C) |
 
 #### 2. L6R24-120
 
@@ -112,11 +113,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/tri-mag-llc/l6r24-120/7682639)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Higher power (~24 W) margin | Still low-power class supply |
+| Universal 90–264 VAC + DOE VI efficiency | Fixed wall-adapter form factor |
+| Compact, safety & EMI compliant | Indoor-type temp limits |
 
 #### 3. WDU12-1900
 
@@ -125,11 +126,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/triad-magnetics/WDU12-1900/6819555)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Highest output (~12 V, 1.9 A ≈ 33 W) | 120 VAC-only input |
+| Enclosed external supply → low noise/heat on PCB | Linear-style → lower efficiency |
+| Standard center-positive DC output | Larger/heavier form factor |
 
 
 ## Actuators
@@ -143,11 +144,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product]()
 
-| Pros                                      | Cons                                                             |
-| ----------------------------------------- | ---------------------------------------------------------------- |
-| Inexpensive                               | Requires external components and support circuitry for interface |
-| Compatible with PSoC                      | Needs special PCB layout.                                        |
-| Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| 128×64 resolution → clear UI graphics | Controller compatibility must match |
+| Low OLED power draw (few–10s mA) | Current rises with brightness/pixels |
+| High contrast, wide viewing angle | Needs proper biasing/passives |
 
 #### 2. GME12864-17
 
@@ -156,11 +157,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://goldenmorninglcd.com/oled-display-module/0.96-inch-128x64-ssd1306-gme12864-11/)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| 3.3–5 V operation flexibility | Power varies with brightness/content |
+| I²C/SPI/parallel interface options | Limited temp range vs. industrial |
+| Manageable ~20 mA typical current | Monochrome-only UI |
 
 #### 3. MDOB048064AV-WI
 
@@ -169,11 +170,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/midas-displays/MDOB048064AV-WI/18088029)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Very small (~0.7″) compact module | Low resolution (48×64) |
+| Wide temp range (-40 → 80 °C) | Monochrome passive-matrix limits UI |
+| Simple 3 V I²C SSD1306 interface | Small viewing/active area |
 
 ### **Push Buttons**
 
@@ -184,11 +185,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/knitter-switch/TSSLE-6868-R-WNN/22607895)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| IP67 sealed; outdoor-capable | Low electrical rating (~50 mA) |
+| Long life (~300k presses) | Higher actuation force (~2 N) |
+| Illuminated SMT switch | More complex/costly than basic tactile |
 
 #### 2. KP0415ASG03RGBP-2SJB
 
@@ -197,11 +198,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/nkk-switches/KP0415ASG03RGBP-2SJB/16351342)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| Integrated RGB + white illumination | Signal-level current only (~100 mA) |
+| Compact SMT tactile pushbutton | Requires LED drive/current limiting |
+| MCU-friendly low-voltage ratings | Higher cost & design complexity |
 
 #### 3. K12SC S 1.5 5N O LFTX
 
@@ -210,11 +211,11 @@ The following sections are the selected major components necessary for  .....
 * $1/each
 * [link to product](https://www.digikey.com/en/products/detail/c-k/K12SC-S-1-5-5N-O-LFTX/7056014)
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros | Cons |
+|------|------|
+| SPST-NO, 0.1 A @ 30 V capability | No illumination |
+| Wide temp range (-40 → 85 °C) | Low current → signal-only use |
+| Compact SMT, ~100k life | High actuation force (~5 N) |
 
 
 
