@@ -8,6 +8,8 @@ title: Module's Microcontroller Selection
 
 I have selected the ESP32-S3-WROOM-1-N4 because I know it will cover everything I need for my subsystem. I have reached this conclusion using the reasoning and selection process outlined below. The ESP32-S3-WROOM-1-N4 supports I2C, UART, and GPIO, which is everything I need to build my subsystem. If later I realize an issue with this process that I didn't see, I will redo it and select a new microcontroller type, but it will most likely be an ESP32 device, as that is what most OLED screens prefer.
 
+In *Table 1* below, I have left a few sections blank because I need to become more familiar with my project before I can fill them in. However, as I find useful things I will save them in the table for later use.
+
 *Table 1: ESP32 Info*
 
 | ESP Info                                      | Answer | Help  |
