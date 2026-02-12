@@ -952,7 +952,7 @@
 <td></td>
 </tr>
 <tr>
-<td>Absolute Maximum Current for entire IC</td>
+<td>Absolute Maximum current <br> (for entire IC)</td>
 <td>1.5 A or 1500 mA</td>
 <td></td>
 </tr>
@@ -962,90 +962,85 @@
 <td></td>
 </tr>
 <tr>
-<td>Absolute Maximum current <br> (for entire IC)</td>
-<td>?</td>
-<td>as found in datasheet</td>
-</tr>
-<tr>
 <td>Maximum GPIO current <br> (per pin)</td>
-<td>?</td>
-<td>as found in datasheet</td>
+<td>40 mA</td>
+<td></td>
 </tr>
 <tr>
 <td>Supports External Interrupts?</td>
-<td>?</td>
-<td>as found in datasheet</td>
+<td>Yes</td>
+<td></td>
 </tr>
 <tr>
 <td>Required Programming Hardware, Cost, URL</td>
 <td>?</td>
-<td>as found in datasheet</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th>Module</th>
-<th># Available</th>
-<th>Needed</th>
-<th>Associated Pins (or * for any)</th>
+<th>Peripheral</th>
+<th>Pins Used</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>UART</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
+<td>UART0</td>
+<td>RXD0 (36), TXD0 (37)</td>
+<td>Default hardware UART0 RX/TX on module; used for serial console/programming by default. UART0 hardware flow control can map to IO15/IO16 via IO MUX but is generally routed via the GPIO matrix if needed.</td>
 </tr>
 <tr>
-<td>external SPI*</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
+<td>UART1</td>
+<td>IO17 (10), IO18 (11), IO19 (13), IO20 (14)</td>
+<td>UART1 signals are available on these pins via IO MUX by default (TX/RX/RTS/CTS). All UARTs can also be reassigned via GPIO Matrix to almost any GPIO.</td>
 </tr>
 <tr>
-<td>I2C</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
+<td>UART2</td>
+<td>No fixed pins</td>
+<td>UART2 does not have default mapped pins in the module; must be assigned via GPIO Matrix.</td>
 </tr>
 <tr>
-<td>GPIO</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
+<td>I2C (I2C0/I2C1)</td>
+<td>Any GPIO pins via GPIO Matrix</td>
+<td>Two I2C interfaces; no fixed SDA/SCL — choose via GPIO Matrix.</td>
 </tr>
 <tr>
-<td>ADC</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
+<td>SPI0 / SPI1 (Flash/PSRAM)</td>
+<td>Module internal (not exposed as general GPIO)</td>
+<td>SPI0 and SPI1 are connected to flash/PSRAM in package; these signals (e.g., SPICLK, SPIQ, etc.) are on pins such as IO8–IO15 and IO46–IO48 but are not recommended for general peripherals.</td>
 </tr>
 <tr>
-<td>LED PWM</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
+<td>SPI2 (Host SPI)</td>
+<td>Any GPIO pins via GPIO Matrix</td>
+<td>Available as general SPI; assign MOSI/MISO/SCLK/CS via GPIO Matrix.</td>
 </tr>
 <tr>
-<td>Motor PWM</td>
-<td>?</td>
-<td>?</td>
-<td>?</td>
+<td>SPI3</td>
+<td>Any GPIO pins via GPIO Matrix</td>
+<td>General SPI available for use; assign via GPIO Matrix.</td>
 </tr>
 <tr>
-<td>USB Programmer</td>
-<td>?</td>
-<td>1</td>
-<td>?</td>
+<td>ADC (SAR ADC1 / ADC2)</td>
+<td>IO0, IO1, IO2, IO3, IO4, IO5, IO6, IO7, IO8, IO9, IO10, IO11, IO12, IO13, IO14, IO15, IO16, IO17, IO18, IO19, IO20 (multiplexed)</td>
+<td>Two 12‑bit SAR ADCs; analog functions are multiplexed with GPIOs 0–20. For ADC2 when Wi‑Fi is active, ADC2 channels may not be usable.</td>
 </tr>
 <tr>
-<td>...</td>
-<td></td>
-<td></td>
-<td></td>
+<td>USB OTG (integrated)</td>
+<td>GPIO19 (13) USB_D‑, GPIO20 (14) USB_D+</td>
+<td>USB OTG data signals are multiplexed with GPIO19/20; see datasheet for USB Serial/JTAG options.</td>
+</tr>
+<tr>
+<td>LED PWM (LEDC)</td>
+<td>Any GPIO pins via GPIO Matrix</td>
+<td>PWM channels can be output on virtually any GPIO.</td>
+</tr>
+<tr>
+<td>Motor PWM (MCPWM)</td>
+<td>Any GPIO pins via GPIO Matrix</td>
+<td>MCPWM channels are assignable via GPIO Matrix.</td>
 </tr>
 </tbody>
 </table>
