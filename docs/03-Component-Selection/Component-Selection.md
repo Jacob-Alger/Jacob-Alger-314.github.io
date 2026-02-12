@@ -38,7 +38,7 @@ The following sections are the selected major components necessary for  .....
 
 3. LTC3621EMS8E-3.3#PBF
 
-    ![LTC3621EMS8E-3.3#PBF](../03-Component-Selection/VoltageRegulators/LTC3621EMS8E-3.3#PBF.webp)
+    ![LTC3621EMS8E-3.3#PBF](../03-Component-Selection/VoltageRegulators/LTC3621EMS8E-3.3-PBF.webp)
 
     * $1/each
     * [link to product]()
