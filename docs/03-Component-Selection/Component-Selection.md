@@ -51,9 +51,9 @@ The following sections are the selected major components necessary for my Human-
 
 #### Selection
 
-Choice:
+Choice: **LM2575-3.3WU-TR**
 
-Rationale:
+Rationale: I have selected the LM2575-3.3WU-TR because it is not only the least expensive option but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem.
 
 ### **Barrel Jack Adapter**
 
@@ -99,9 +99,9 @@ Rationale:
 
 #### Selection
 
-Choice:
+Choice: **FC68148S**
 
-Rationale:
+Rationale: When researching barrel jack adapters, there were few options for surface-mount adapters that met the specifications I required. I may look into getting permission to use through-hole, as that would be far more secure, but from the surface-mount options, the FC68148S appears to be the best. The other options are either slightly worse or too small for common power supplies, so I am just going to go with the familiar and common FC68148S model.
 
 ### **Power Supply**
 
@@ -146,9 +146,9 @@ Rationale:
 
 #### Selection
 
-Choice:
+Choice: **L6R24-120**
 
-Rationale:
+Rationale: The L6R24-120 power supply is very similar to the one provided in the lab kits, so I feel that it is the most logical choice if I don't end up simply using the one in my lab kit. It is also the least expensive option, which is valuable for keeping my subsystem within budget.
 
 ## Actuators
 
@@ -196,9 +196,9 @@ Rationale:
 
 #### Selection
 
-Choice:
+Choice: **GME12864-17** / **MDOB128064V2V-WI**
 
-Rationale:
+Rationale: The GME12864-17 is the OLED screen given to us in class, and the one we will be proving proficiency with in the labs, so it is a logical option for my subsystem; however, the MDOB128064V2V-WI is a very similar option that is larger, and more importantly, has an easily obtainable datasheet on DigiKey, which is critical for this project. I will finalize my selection later as I familiarize myself with GME12864-17 and determine whether to move forward with it for my subsystem.
 
 ### **Push Buttons**
 
@@ -244,9 +244,9 @@ Rationale:
 
 #### Selection
 
-Choice:
+Choice: **TSSLE 6868 R WNN**
 
-Rationale:
+Rationale: The pushbuttons are uniquely hard to compare and search for, as they are based far more on form and feel than on pure specifications; however, I feel that the TSSLE 6868 R WNN are among the best and are similar to the pushbuttons I have used before. For the prototype control, I may look into making caps for these, which the button style is capable of. They also feature illumination, which could be an interesting stretch goal to improve the user experience.
 
 
 
