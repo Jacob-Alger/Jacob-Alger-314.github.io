@@ -49,6 +49,12 @@ The following sections are the selected major components necessary for my Human-
 | Synchronous, very low IQ, high efficiency | More complex control/features |
 | High freq (≈1–2.25 MHz) → very small passives | Higher cost vs. legacy regulators |
 
+#### Selection
+
+Choice:
+
+Rationale:
+
 ### **Barrel Jack Adapter**
 
 #### 1. FC68148S
@@ -91,6 +97,12 @@ The following sections are the selected major components necessary for my Human-
 | SMT suitable for small PCBs | Less common plug compatibility |
 | Works with low-voltage DC adapters | Lower mechanical durability (SMT) |
 
+#### Selection
+
+Choice:
+
+Rationale:
+
 ### **Power Supply**
 
 #### 1. DDU120150R
@@ -132,6 +144,11 @@ The following sections are the selected major components necessary for my Human-
 | Enclosed external supply → low noise/heat on PCB | Linear-style → lower efficiency |
 | Standard center-positive DC output | Larger/heavier form factor |
 
+#### Selection
+
+Choice:
+
+Rationale:
 
 ## Actuators
 
@@ -177,6 +194,12 @@ The following sections are the selected major components necessary for my Human-
 | Wide temp range (-40 → 80 °C) | Monochrome passive-matrix limits UI |
 | Simple 3 V I²C SSD1306 interface | Small viewing/active area |
 
+#### Selection
+
+Choice:
+
+Rationale:
+
 ### **Push Buttons**
 
 #### 1. TSSLE 6868 R WNN
@@ -219,7 +242,11 @@ The following sections are the selected major components necessary for my Human-
 | Wide temp range (-40 → 85 °C) | Low current → signal-only use |
 | Compact SMT, ~100k life | High actuation force (~5 N) |
 
+#### Selection
 
+Choice:
+
+Rationale:
 
 
 
