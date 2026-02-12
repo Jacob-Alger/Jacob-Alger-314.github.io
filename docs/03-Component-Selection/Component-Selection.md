@@ -15,7 +15,7 @@ The following sections are the selected major components necessary for  .....
     ![LM2575-3.3WU-TR](../03-Component-Selection/VoltageRegulators/LM2575-3.3WU-TR.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -28,7 +28,7 @@ The following sections are the selected major components necessary for  .....
     ![LM2675MX-3.3/NOPB](../03-Component-Selection/VoltageRegulators/LM2675MX-3.3-NOPB.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -41,7 +41,7 @@ The following sections are the selected major components necessary for  .....
     ![LTC3621EMS8E-3.3#PBF](../03-Component-Selection/VoltageRegulators/LTC3621EMS8E-3.3-PBF.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3621EMS8E-3-3-PBF/4840601)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -56,7 +56,7 @@ The following sections are the selected major components necessary for  .....
     ![FC68148S](../03-Component-Selection/BarrelJacks/FC68148S.jpg)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148S/20374233)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -69,7 +69,7 @@ The following sections are the selected major components necessary for  .....
     ![FC68148ST](../03-Component-Selection/BarrelJacks/FC68148ST.jpg)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148ST/26794679)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -82,7 +82,7 @@ The following sections are the selected major components necessary for  .....
     ![FC68145S](../03-Component-Selection/BarrelJacks/FC68145S.jpg)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68145S/20374234)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -97,7 +97,7 @@ The following sections are the selected major components necessary for  .....
     ![DDU120150R](../03-Component-Selection/PowerSupply/DDU120150R.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/jameco-electronics/DDU120150R/25966445)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -110,7 +110,7 @@ The following sections are the selected major components necessary for  .....
     ![L6R24-120](../03-Component-Selection/PowerSupply/L6R24-120.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/tri-mag-llc/l6r24-120/7682639)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -123,7 +123,7 @@ The following sections are the selected major components necessary for  .....
     ![WDU12-1900](../03-Component-Selection/PowerSupply/WDU12-1900.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/triad-magnetics/WDU12-1900/6819555)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -154,7 +154,7 @@ The following sections are the selected major components necessary for  .....
     ![GME12864-17](../03-Component-Selection/OLED/GME12864-17.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://goldenmorninglcd.com/oled-display-module/0.96-inch-128x64-ssd1306-gme12864-11/)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -167,7 +167,7 @@ The following sections are the selected major components necessary for  .....
     ![MDOB048064AV-WI](../03-Component-Selection/OLED/MDOB048064AV-WI.webp)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/midas-displays/MDOB048064AV-WI/18088029)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -182,7 +182,7 @@ The following sections are the selected major components necessary for  .....
     ![TSSLE 6868 R WNN](../03-Component-Selection/PushButtons/TSSLE-6868-R-WNN.jpg)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/knitter-switch/TSSLE-6868-R-WNN/22607895)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -195,7 +195,7 @@ The following sections are the selected major components necessary for  .....
     ![KP0415ASG03RGBP-2SJB](../03-Component-Selection/PushButtons/KP0415ASG03RGBP-2SJB.jpg)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/nkk-switches/KP0415ASG03RGBP-2SJB/16351342)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
@@ -208,7 +208,7 @@ The following sections are the selected major components necessary for  .....
     ![K12SC S 1.5 5N O LFTX](../03-Component-Selection/PushButtons/K12SCS1.55NOLFTX.jpg)
 
     * $1/each
-    * [link to product]()
+    * [link to product](https://www.digikey.com/en/products/detail/c-k/K12SC-S-1-5-5N-O-LFTX/7056014)
 
     | Pros                                      | Cons                                                             |
     | ----------------------------------------- | ---------------------------------------------------------------- |
