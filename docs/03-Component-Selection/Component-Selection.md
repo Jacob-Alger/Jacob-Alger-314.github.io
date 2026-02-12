@@ -136,18 +136,18 @@ The following sections are the selected major components necessary for  .....
 
 ### **OLED Screens**
 
-1. MDOB128064V2V-WI
+#### 1. MDOB128064V2V-WI
 
-    ![MDOB128064V2V-WI](../03-Component-Selection/OLED/MDOB128064V2V-WI.jpg)
+![MDOB128064V2V-WI](../03-Component-Selection/OLED/MDOB128064V2V-WI.jpg)
 
-    * $1/each
-    * [link to product]()
+* $1/each
+* [link to product]()
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+| Pros                                      | Cons                                                             |
+| ----------------------------------------- | ---------------------------------------------------------------- |
+| Inexpensive                               | Requires external components and support circuitry for interface |
+| Compatible with PSoC                      | Needs special PCB layout.                                        |
+| Meets surface mount constraint of project |
 
 2. GME12864-17
 
