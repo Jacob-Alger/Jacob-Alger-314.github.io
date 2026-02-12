@@ -90,7 +90,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modules-selected-major-components" class="md-skip">
+        <a href="#hmi-subsystem-major-components" class="md-skip">
           Skip to content
         </a>
       
@@ -1422,8 +1422,8 @@
   
 
 
-<h1 id="modules-selected-major-components">Module's Selected Major Components</h1>
-<p>The following sections are the selected major components necessary for  .....</p>
+<h1 id="hmi-subsystem-major-components">HMI Subsystem Major Components</h1>
+<p>The following sections are the selected major components necessary for my Human-Machine Interface Subsystem. I need to be able to regulate input power using a 3.3-V Switching Regulator from a Barrel Jack Adapter, powered by a Wall Supply AC/DC barrel jack cord. Then, I need to use the regulated 3.3 Volts to power an OLED Screen to display the data and control a microcontroller, which will use I2C to communicate with the OLED and interpret digital inputs from push buttons, allowing the user to control the rover and navigate the menus. The following page details my product selection process of determining which of the three selected components is the best for my subsystem.</p>
 <h2 id="power-management">Power Management</h2>
 <h3 id="switching-voltage-regulator"><strong>Switching Voltage Regulator</strong></h3>
 <h4 id="1-lm2575-33wu-tr">1. LM2575-3.3WU-TR</h4>
@@ -1441,16 +1441,16 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>~1 A buck output; suitable for MCU + display</td>
+<td>Low switching freq → large L/C components</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Wide input range; stable SMPS regulation</td>
+<td>Requires careful PCB layout &amp; filtering</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Good efficiency vs. linear regulators</td>
+<td>Higher quiescent current than modern parts</td>
 </tr>
 </tbody>
 </table>
@@ -1458,8 +1458,8 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../VoltageRegulators/LM2675MX-3.3-NOPB.webp" data-desc-position="bottom"><img alt="LM2675MX-3.3/NOPB" src="../VoltageRegulators/LM2675MX-3.3-NOPB.webp"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1469,27 +1469,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Higher freq (~260 kHz) → smaller passives</td>
+<td>Needs external L, diode, caps</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>~1 A regulated 3.3 V output</td>
+<td>EMI/layout sensitivity</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Better efficiency than linear solutions</td>
+<td>Non-synchronous → lower light-load efficiency</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="3-ltc3621ems8e-33pbf">3. LTC3621EMS8E-3.3#PBF</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../VoltageRegulators/LTC3621EMS8E-3.3-PBF.webp" data-desc-position="bottom"><img alt="LTC3621EMS8E-3.3#PBF" src="../VoltageRegulators/LTC3621EMS8E-3.3-PBF.webp"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3621EMS8E-3-3-PBF/4840601">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3621EMS8E-3-3-PBF/4840601">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1499,28 +1497,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Wide Vin (~2.7–17 V), ~1 A output</td>
+<td>Limited scalability beyond ~1 A</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Synchronous, very low IQ, high efficiency</td>
+<td>More complex control/features</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>High freq (≈1–2.25 MHz) → very small passives</td>
+<td>Higher cost vs. legacy regulators</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h3 id="barrel-jack-adapter"><strong>Barrel Jack Adapter</strong></h3>
 <h4 id="1-fc68148s">1. FC68148S</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BarrelJacks/FC68148S.jpg" data-desc-position="bottom"><img alt="FC68148S" src="../BarrelJacks/FC68148S.jpg"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148S/20374233">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148S/20374233">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1530,27 +1526,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Common 5.5 mm/2.1 mm DC input</td>
+<td>~2 A current limit</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>SMT footprint → compact PCB</td>
+<td>SMT weaker mechanically than TH</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Suitable for low-power 12 V systems</td>
+<td>12 V-class only</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="2-fc68148st">2. FC68148ST</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BarrelJacks/FC68148ST.jpg" data-desc-position="bottom"><img alt="FC68148ST" src="../BarrelJacks/FC68148ST.jpg"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148ST/26794679">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148ST/26794679">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1560,27 +1554,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Standard 2.1 mm, ~12 V/2 A rating</td>
+<td>Same ~2 A limit</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>SMT, compact, automated assembly</td>
+<td>Reduced mechanical robustness</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Defined insertion force → predictable feel</td>
+<td>Basic connector; no locking/high-power features</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="3-fc68145s">3. FC68145S</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BarrelJacks/FC68145S.jpg" data-desc-position="bottom"><img alt="FC68145S" src="../BarrelJacks/FC68145S.jpg"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68145S/20374234">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68145S/20374234">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1590,28 +1582,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Very compact 1.3 mm barrel size</td>
+<td>Very low current (~1 A)</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>SMT suitable for small PCBs</td>
+<td>Less common plug compatibility</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Works with low-voltage DC adapters</td>
+<td>Lower mechanical durability (SMT)</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h3 id="power-supply"><strong>Power Supply</strong></h3>
 <h4 id="1-ddu120150r">1. DDU120150R</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PowerSupply/DDU120150R.webp" data-desc-position="bottom"><img alt="DDU120150R" src="../PowerSupply/DDU120150R.webp"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/jameco-electronics/DDU120150R/25966445">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/jameco-electronics/DDU120150R/25966445">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1621,27 +1611,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>12 V, 1.5 A (18 W) → enough for 3.3 V rail</td>
+<td>120 VAC-only input</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Safety-approved wall adapter</td>
+<td>Limited power headroom</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Standard 2.1 mm barrel + long cable</td>
+<td>Narrow temp range (≈-10 → 40 °C)</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="2-l6r24-120">2. L6R24-120</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PowerSupply/L6R24-120.webp" data-desc-position="bottom"><img alt="L6R24-120" src="../PowerSupply/L6R24-120.webp"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/tri-mag-llc/l6r24-120/7682639">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/tri-mag-llc/l6r24-120/7682639">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1651,27 +1639,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Higher power (~24 W) margin</td>
+<td>Still low-power class supply</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Universal 90–264 VAC + DOE VI efficiency</td>
+<td>Fixed wall-adapter form factor</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Compact, safety &amp; EMI compliant</td>
+<td>Indoor-type temp limits</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="3-wdu12-1900">3. WDU12-1900</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PowerSupply/WDU12-1900.webp" data-desc-position="bottom"><img alt="WDU12-1900" src="../PowerSupply/WDU12-1900.webp"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/triad-magnetics/WDU12-1900/6819555">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/triad-magnetics/WDU12-1900/6819555">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1681,21 +1667,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Highest output (~12 V, 1.9 A ≈ 33 W)</td>
+<td>120 VAC-only input</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Enclosed external supply → low noise/heat on PCB</td>
+<td>Linear-style → lower efficiency</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Standard center-positive DC output</td>
+<td>Larger/heavier form factor</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h2 id="actuators">Actuators</h2>
 <h3 id="oled-screens"><strong>OLED Screens</strong></h3>
 <h4 id="1-mdob128064v2v-wi">1. MDOB128064V2V-WI</h4>
@@ -1713,16 +1697,16 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>128×64 resolution → clear UI graphics</td>
+<td>Controller compatibility must match</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Low OLED power draw (few–10s mA)</td>
+<td>Current rises with brightness/pixels</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>High contrast, wide viewing angle</td>
+<td>Needs proper biasing/passives</td>
 </tr>
 </tbody>
 </table>
@@ -1730,8 +1714,8 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../OLED/GME12864-17.webp" data-desc-position="bottom"><img alt="GME12864-17" src="../OLED/GME12864-17.webp"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://goldenmorninglcd.com/oled-display-module/0.96-inch-128x64-ssd1306-gme12864-11/">link to product</a></p>
+<li><a href="https://goldenmorninglcd.com/oled-display-module/0.96-inch-128x64-ssd1306-gme12864-11/">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1741,27 +1725,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>3.3–5 V operation flexibility</td>
+<td>Power varies with brightness/content</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>I²C/SPI/parallel interface options</td>
+<td>Limited temp range vs. industrial</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Manageable ~20 mA typical current</td>
+<td>Monochrome-only UI</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="3-mdob048064av-wi">3. MDOB048064AV-WI</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../OLED/MDOB048064AV-WI.webp" data-desc-position="bottom"><img alt="MDOB048064AV-WI" src="../OLED/MDOB048064AV-WI.webp"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/midas-displays/MDOB048064AV-WI/18088029">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/midas-displays/MDOB048064AV-WI/18088029">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1771,28 +1753,26 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Very small (~0.7″) compact module</td>
+<td>Low resolution (48×64)</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Wide temp range (-40 → 80 °C)</td>
+<td>Monochrome passive-matrix limits UI</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Simple 3 V I²C SSD1306 interface</td>
+<td>Small viewing/active area</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h3 id="push-buttons"><strong>Push Buttons</strong></h3>
 <h4 id="1-tssle-6868-r-wnn">1. TSSLE 6868 R WNN</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PushButtons/TSSLE-6868-R-WNN.jpg" data-desc-position="bottom"><img alt="TSSLE 6868 R WNN" src="../PushButtons/TSSLE-6868-R-WNN.jpg"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/knitter-switch/TSSLE-6868-R-WNN/22607895">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/knitter-switch/TSSLE-6868-R-WNN/22607895">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1802,27 +1782,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>IP67 sealed; outdoor-capable</td>
+<td>Low electrical rating (~50 mA)</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Long life (~300k presses)</td>
+<td>Higher actuation force (~2 N)</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Illuminated SMT switch</td>
+<td>More complex/costly than basic tactile</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="2-kp0415asg03rgbp-2sjb">2. KP0415ASG03RGBP-2SJB</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PushButtons/KP0415ASG03RGBP-2SJB.jpg" data-desc-position="bottom"><img alt="KP0415ASG03RGBP-2SJB" src="../PushButtons/KP0415ASG03RGBP-2SJB.jpg"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/nkk-switches/KP0415ASG03RGBP-2SJB/16351342">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/nkk-switches/KP0415ASG03RGBP-2SJB/16351342">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1832,27 +1810,25 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>Integrated RGB + white illumination</td>
+<td>Signal-level current only (~100 mA)</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Compact SMT tactile pushbutton</td>
+<td>Requires LED drive/current limiting</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>MCU-friendly low-voltage ratings</td>
+<td>Higher cost &amp; design complexity</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 <h4 id="3-k12sc-s-15-5n-o-lftx">3. K12SC S 1.5 5N O LFTX</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../PushButtons/K12SCS1.55NOLFTX.jpg" data-desc-position="bottom"><img alt="K12SC S 1.5 5N O LFTX" src="../PushButtons/K12SCS1.55NOLFTX.jpg"></a></p>
 <ul>
 <li>$1/each</li>
-<li>
-<p><a href="https://www.digikey.com/en/products/detail/c-k/K12SC-S-1-5-5N-O-LFTX/7056014">link to product</a></p>
+<li><a href="https://www.digikey.com/en/products/detail/c-k/K12SC-S-1-5-5N-O-LFTX/7056014">link to product</a></li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1862,21 +1838,19 @@
 </thead>
 <tbody>
 <tr>
-<td>Inexpensive</td>
-<td>Requires external components and support circuitry for interface</td>
+<td>SPST-NO, 0.1 A @ 30 V capability</td>
+<td>No illumination</td>
 </tr>
 <tr>
-<td>Compatible with PSoC</td>
-<td>Needs special PCB layout.</td>
+<td>Wide temp range (-40 → 85 °C)</td>
+<td>Low current → signal-only use</td>
 </tr>
 <tr>
-<td>Meets surface mount constraint of project</td>
-<td></td>
+<td>Compact SMT, ~100k life</td>
+<td>High actuation force (~5 N)</td>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
 
 
 
