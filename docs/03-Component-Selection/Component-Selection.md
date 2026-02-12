@@ -12,7 +12,7 @@ The following sections are the selected major components necessary for  .....
 
 1. LM2575-3.3WU-TR
 
-    ![LM2575-3.3WU-TR](../03-Componenet-Selection/VoltageRegulators/LM2575-3.3WU-TR.webp)
+    ![LM2575-3.3WU-TR](../03-Component-Selection/VoltageRegulators/LM2575-3.3WU-TR.webp)
 
     * $1/each
     * [link to product]()
@@ -23,9 +23,9 @@ The following sections are the selected major components necessary for  .....
     | Compatible with PSoC                      | Needs special PCB layout.                                        |
     | Meets surface mount constraint of project |
 
-2. Model Number
+2. LM2675MX-3.3/NOPB
 
-    ![](image1.png)
+    ![LM2675MX-3.3/NOPB](../03-Component-Selection/VoltageRegulator/LM2675MX-3.3-NOPB.webp)
 
     * $1/each
     * [link to product]()
@@ -36,9 +36,9 @@ The following sections are the selected major components necessary for  .....
     | Compatible with PSoC                      | Needs special PCB layout.                                        |
     | Meets surface mount constraint of project |
 
-3. Model Number
+3. LTC3621EMS8E-3.3#PBF
 
-    ![](image1.png)
+    ![LTC3621EMS8E-3.3#PBF](../03-Component-Selection/VoltageRegulators/LTC3621EMS8E-3.3#PBF.webp)
 
     * $1/each
     * [link to product]()
@@ -53,7 +53,7 @@ The following sections are the selected major components necessary for  .....
 
 1. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -66,7 +66,7 @@ The following sections are the selected major components necessary for  .....
 
 2. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -79,7 +79,7 @@ The following sections are the selected major components necessary for  .....
 
 3. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -94,7 +94,7 @@ The following sections are the selected major components necessary for  .....
 
 1. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -107,7 +107,7 @@ The following sections are the selected major components necessary for  .....
 
 2. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -120,7 +120,7 @@ The following sections are the selected major components necessary for  .....
 
 3. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -138,7 +138,7 @@ The following sections are the selected major components necessary for  .....
 
 1. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -151,7 +151,7 @@ The following sections are the selected major components necessary for  .....
 
 2. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -164,7 +164,7 @@ The following sections are the selected major components necessary for  .....
 
 3. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -179,7 +179,7 @@ The following sections are the selected major components necessary for  .....
 
 1. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -192,7 +192,7 @@ The following sections are the selected major components necessary for  .....
 
 2. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
@@ -205,7 +205,7 @@ The following sections are the selected major components necessary for  .....
 
 3. Model Number
 
-    ![](image1.png)
+    ![](../03-Component-Selection/)
 
     * $1/each
     * [link to product]()
