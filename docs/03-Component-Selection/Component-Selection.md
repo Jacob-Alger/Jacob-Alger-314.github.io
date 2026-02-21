@@ -84,24 +84,25 @@ Rationale: I have selected the LM2575-3.3WU-TR because it is not only the least 
 | Defined insertion force → predictable feel | Basic connector; no locking/high-power features |
 
 
-#### 3. FC68145S
+#### 3. PJ-102AH
 
-![FC68145S](../03-Component-Selection/BarrelJacks/FC68145S.jpg)
+![PJ-102AH](../03-Component-Selection/BarrelJacks/PJ-102AH.png)
 
-* $2.39/each
-* [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68145S/20374234)
+* $0.59/each
+* [link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-102A/275425)
 
-| Pros | Cons |
-|------|------|
-| Very compact 1.3 mm barrel size | Very low current (~1 A) |
-| SMT suitable for small PCBs | Less common plug compatibility |
-| Works with low-voltage DC adapters | Lower mechanical durability (SMT) |
+| Pros                          | Cons                                           |
+| ----------------------------- | ---------------------------------------------- |
+| Standard 2.0mm × 5.5mm Diameter | Can stress PCB mechanically if unplugged often  |
+| Provided in Lab Kit           |  
+| Works with most wall adapters (also provided in Lab Kit) |
+| Through-Hole, good for PCB mounting |
 
 #### Selection
 
-Choice: **FC68148S**
+Choice: **PJ-102AH**
 
-Rationale: When researching barrel jack adapters, there were few options for surface-mount adapters that met the specifications I required. I may look into getting permission to use through-hole, as that would be far more secure, but from the surface-mount options, the FC68148S appears to be the best. The other options are either slightly worse or too small for common power supplies, so I am just going to go with the familiar and common FC68148S model.
+Rationale: When researching barrel jack adapters, there were few options for surface-mount adapters that met the specifications I required. From the surface-mount options, the FC68148S appears to be the best. However, through-hole is generally better for connections, so I am going to go with the barrel jack I used last semester, the PJ-102AH. It is capable of everything I will need for this subsystem, and I know it is reliable.
 
 ### **Power Supply**
 
@@ -196,9 +197,9 @@ Rationale: The L6R24-120 power supply is very similar to the one provided in the
 
 #### Selection
 
-Choice: **GME12864-17** / **MDOB128064V2V-WI**
+Choice: **GME12864-17**
 
-Rationale: The GME12864-17 is the OLED screen given to us in class, and the one we will be proving proficiency with in the labs, so it is a logical option for my subsystem; however, the MDOB128064V2V-WI is a very similar option that is larger, and more importantly, has an easily obtainable datasheet on DigiKey, which is critical for this project. I will finalize my selection later as I familiarize myself with GME12864-17 and determine whether to move forward with it for my subsystem.
+Rationale: The GME12864-17 is the OLED screen given to us in class, and the one we will be proving proficiency with in the labs, so it is a logical option for my subsystem; however, the MDOB128064V2V-WI is a very similar option that is larger, and more importantly, has an easily obtainable datasheet on DigiKey, which is critical for this project. I will move forward with GME12864-17, as I know how to make it work and can find datasheets for similar models, which should be sufficient, since I will just be using header pins to connect the screen to my board.
 
 ### **Push Buttons**
 
