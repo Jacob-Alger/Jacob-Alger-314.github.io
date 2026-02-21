@@ -46,11 +46,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/</loc>
-         <lastmod>2026-02-21</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/02-Microcontroller-Selection/esp-32-table/</loc>
          <lastmod>2026-02-21</lastmod>
          <changefreq>daily</changefreq>
