@@ -15,3 +15,5 @@ Write a overview of what you did and why you did a Power Budget.
 From the prepare Power Budget, .....
 
 ## Resouces
+
+The power budget as a PDF download is available [*here*](EGR314-Power_Budget.pdf), and a Microsoft Excel Sheet [*here*](EGR314-Power_Budget.xlsx).
