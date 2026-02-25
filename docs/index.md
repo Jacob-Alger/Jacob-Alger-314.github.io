@@ -7,11 +7,11 @@ tags:
 <center>
 <font size= "6">Jacob Alger Datasheet</font><br>
 as part of<br>
-<font size= "8"> Project Name</font><br>
+<font size= "8"> Exploration Device Project</font><br>
 for<br>
 <font size= "5"> Team 202 </font><br>
 
-**Submission: January 18, 2026**
+**Submission: March 2, 2026**
 </center>
 
 ## Introduction
@@ -21,13 +21,18 @@ for<br>
 ### Project Summary
 
 * This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-* Team 202 [*Team Report*.](https://egr314-s-2026-202.github.io/)
+
+> View the Team 202 Team Report [*here*.](https://egr314-s-2026-202.github.io/)
 
 ### My Contribution
 
 * This needs to be updated to reflect a team introduction
-* Content should also help an unfamiliar reader navigate to areas of interest. Information like:
 
-To review the details listed of the material used to construct the subsection, you can review it in the ["BOM"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-BOM/BOM/) section of the datasheet.
+To view the pages of this datasheet, you can you the above navigation bar, or the following links to each page:
+* [*Requirements*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/01-Requirements/Requirements/)
+* [*Block Diagram*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/02-Block-Diagram/Block-Diagram/)
+* [*Component Selection*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/03-Component-Selection/Component-Selection/)
+* [*Microcontroller Selection*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/04-Microcontroller-Selection/Microcontroller-Selection/)
+* [*Power Budget*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/05-Power-Budget/Power-Budget/)
+* [*Schematic*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/07-Schematic/schematic/)
 
->Continue for all the remaining/missing sections.
