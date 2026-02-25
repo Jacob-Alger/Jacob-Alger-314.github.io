@@ -1,5 +1,5 @@
 ---
-title: Module's Selected Major Components
+title: HMI Selected Major Components
 ---
 
 # HMI Subsystem Major Components

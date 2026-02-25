@@ -1,5 +1,5 @@
 ---
-title: Power Budget
+title: HMI Power Budget
 ---
 
 ## Overview

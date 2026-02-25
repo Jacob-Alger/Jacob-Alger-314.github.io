@@ -1,5 +1,5 @@
 ---
-title: Module's Schematic
+title: HMI Schematic
 ---
 
 ## Overview

@@ -1,5 +1,5 @@
 ---
-title: Module's Microcontroller Selection
+title: HMI Microcontroller Selection
 ---
 ## Selected Microcontroller
 

@@ -1,5 +1,5 @@
 ---
-title: Module Block Diagram
+title: HMI Block Diagram
 tags:
 - tag1
 - tag2
