@@ -29,10 +29,11 @@ for<br>
 * This needs to be updated to reflect a team introduction
 
 To view the pages of this datasheet, you can you the above navigation bar, or the following links to each page:
-* [*Requirements*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/01-Requirements/Requirements/)
-* [*Block Diagram*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/02-Block-Diagram/Block-Diagram/)
-* [*Component Selection*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/03-Component-Selection/Component-Selection/)
-* [*Microcontroller Selection*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/04-Microcontroller-Selection/Microcontroller-Selection/)
-* [*Power Budget*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/05-Power-Budget/Power-Budget/)
-* [*Schematic*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/07-Schematic/schematic/)
+
+* [*Requirements Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/01-Requirements/Requirements/)
+* [*Block Diagram Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/02-Block-Diagram/Block-Diagram/)
+* [*Component Selection Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/03-Component-Selection/Component-Selection/)
+* [*Microcontroller Selection Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/04-Microcontroller-Selection/Microcontroller-Selection/)
+* [*Power Budget Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/05-Power-Budget/Power-Budget/)
+* [*Schematic Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/07-Schematic/schematic/)
 
