@@ -243,9 +243,35 @@ Rationale: The GME12864-17 is the OLED screen given to us in class, and the one 
 | Wide temp range (-40 → 85 °C) | Low current → signal-only use |
 | Compact SMT, ~100k life | High actuation force (~5 N) |
 
+#### 4. TL3300CF160Q
+
+![TL3300CF160Q](../03-Component-Selection/PushButtons/TL3300CF160Q.jpg)
+
+* $0.60/each
+* [link to product](https://www.digikey.com/en/products/detail/e-switch/TL3300CF160Q/2498433)
+
+| Pros | Cons |
+|------|------|
+|      |      |
+|      |      |
+|      |      |
+
+#### 5. B3U-1000P
+
+![B3U-1000P](../03-Component-Selection/PushButtons/B3U-1000P.webp)
+
+* $0.90/each
+* [link to product](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3U-1000P/1534338)
+
+| Pros | Cons |
+|------|------|
+|      |      |
+|      |      |
+|      |      |
+
 #### Selection
 
-Choice: **TSSLE 6868 R WNN**
+Choice: 
 
 Rationale: The pushbuttons are uniquely hard to compare and search for, as they are based far more on form and feel than on pure specifications; however, I feel that the TSSLE 6868 R WNN are among the best and are similar to the pushbuttons I have used before. For the prototype control, I may look into making caps for these, which the button style is capable of. They also feature illumination, which could be an interesting stretch goal to improve the user experience.
 
