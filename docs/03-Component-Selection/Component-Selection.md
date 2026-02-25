@@ -15,7 +15,7 @@ The following sections are the selected major components necessary for my Human-
 ![LM2575-3.3WU-TR](../03-Component-Selection/VoltageRegulators/LM2575-3.3WU-TR.webp)
 
 * $1.75/each
-* [link to product](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)
+* [Link to product](https://www.digikey.com/en/products/detail/microchip-technology/LM2575-3-3WU-TR/1027646)
 
 | Pros | Cons |
 |------|------|
@@ -28,7 +28,7 @@ The following sections are the selected major components necessary for my Human-
 ![LM2675MX-3.3/NOPB](../03-Component-Selection/VoltageRegulators/LM2675MX-3.3-NOPB.webp)
 
 * $4.80/each
-* [link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)
+* [Link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2675MX-3-3-NOPB/366907)
 
 | Pros | Cons |
 |------|------|
@@ -41,7 +41,7 @@ The following sections are the selected major components necessary for my Human-
 ![LTC3621EMS8E-3.3#PBF](../03-Component-Selection/VoltageRegulators/LTC3621EMS8E-3.3-PBF.webp)
 
 * $8.17/each
-* [link to product](https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3621EMS8E-3-3-PBF/4840601)
+* [Link to product](https://www.digikey.com/en/products/detail/analog-devices-inc/LTC3621EMS8E-3-3-PBF/4840601)
 
 | Pros | Cons |
 |------|------|
@@ -62,7 +62,7 @@ Rationale: I have selected the LM2575-3.3WU-TR because it is not only the least 
 ![FC68148S](../03-Component-Selection/BarrelJacks/FC68148S.jpg)
 
 * $1.55/each
-* [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148S/20374233)
+* [Link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148S/20374233)
 
 | Pros | Cons |
 |------|------|
@@ -75,7 +75,7 @@ Rationale: I have selected the LM2575-3.3WU-TR because it is not only the least 
 ![FC68148ST](../03-Component-Selection/BarrelJacks/FC68148ST.jpg)
 
 * $0.90/each
-* [link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148ST/26794679)
+* [Link to product](https://www.digikey.com/en/products/detail/cliff-electronic-components-ltd/FC68148ST/26794679)
 
 | Pros | Cons |
 |------|------|
@@ -89,7 +89,7 @@ Rationale: I have selected the LM2575-3.3WU-TR because it is not only the least 
 ![PJ-102AH](../03-Component-Selection/BarrelJacks/PJ-102AH.png)
 
 * $0.59/each
-* [link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-102A/275425)
+* [Link to product](https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-102A/275425)
 
 | Pros                          | Cons                                           |
 | ----------------------------- | ---------------------------------------------- |
@@ -111,7 +111,7 @@ Rationale: When researching barrel jack adapters, there were few options for sur
 ![DDU120150R](../03-Component-Selection/PowerSupply/DDU120150R.webp)
 
 * $10.53/each
-* [link to product](https://www.digikey.com/en/products/detail/jameco-electronics/DDU120150R/25966445)
+* [Link to product](https://www.digikey.com/en/products/detail/jameco-electronics/DDU120150R/25966445)
 
 | Pros | Cons |
 |------|------|
@@ -124,7 +124,7 @@ Rationale: When researching barrel jack adapters, there were few options for sur
 ![L6R24-120](../03-Component-Selection/PowerSupply/L6R24-120.webp)
 
 * $10.38/each
-* [link to product](https://www.digikey.com/en/products/detail/tri-mag-llc/l6r24-120/7682639)
+* [Link to product](https://www.digikey.com/en/products/detail/tri-mag-llc/l6r24-120/7682639)
 
 | Pros | Cons |
 |------|------|
@@ -137,7 +137,7 @@ Rationale: When researching barrel jack adapters, there were few options for sur
 ![WDU12-1900](../03-Component-Selection/PowerSupply/WDU12-1900.webp)
 
 * $49.93/each
-* [link to product](https://www.digikey.com/en/products/detail/triad-magnetics/WDU12-1900/6819555)
+* [Link to product](https://www.digikey.com/en/products/detail/triad-magnetics/WDU12-1900/6819555)
 
 | Pros | Cons |
 |------|------|
@@ -160,7 +160,7 @@ Rationale: The L6R24-120 power supply is very similar to the one provided in the
 ![MDOB128064V2V-WI](../03-Component-Selection/OLED/MDOB128064V2V-WI.jpg)
 
 * $11.03/each
-* [link to product](https://www.digikey.com/en/products/detail/midas-displays/MDOB128064V2V-WI/20841734)
+* [Link to product](https://www.digikey.com/en/products/detail/midas-displays/MDOB128064V2V-WI/20841734)
 
 | Pros | Cons |
 |------|------|
@@ -173,7 +173,7 @@ Rationale: The L6R24-120 power supply is very similar to the one provided in the
 ![GME12864-17](../03-Component-Selection/OLED/GME12864-17.webp)
 
 * Given In Class, Not Currently Being Sold
-* [link to product](https://goldenmorninglcd.com/oled-display-module/0.96-inch-128x64-ssd1306-gme12864-11/)
+* [Link to product](https://goldenmorninglcd.com/oled-display-module/0.96-inch-128x64-ssd1306-gme12864-11/)
 
 | Pros | Cons |
 |------|------|
@@ -187,7 +187,7 @@ Rationale: The L6R24-120 power supply is very similar to the one provided in the
 ![MDOB048064AV-WI](../03-Component-Selection/OLED/MDOB048064AV-WI.webp)
 
 * $7.38/each
-* [link to product](https://www.digikey.com/en/products/detail/midas-displays/MDOB048064AV-WI/18088029)
+* [Link to product](https://www.digikey.com/en/products/detail/midas-displays/MDOB048064AV-WI/18088029)
 
 | Pros | Cons |
 |------|------|
@@ -208,7 +208,7 @@ Rationale: The GME12864-17 is the OLED screen given to us in class, and the one 
 ![TSSLE 6868 R WNN](../03-Component-Selection/PushButtons/TSSLE-6868-R-WNN.jpg)
 
 * $3.38/each
-* [link to product](https://www.digikey.com/en/products/detail/knitter-switch/TSSLE-6868-R-WNN/22607895)
+* [Link to product](https://www.digikey.com/en/products/detail/knitter-switch/TSSLE-6868-R-WNN/22607895)
 
 | Pros | Cons |
 |------|------|
@@ -221,7 +221,7 @@ Rationale: The GME12864-17 is the OLED screen given to us in class, and the one 
 ![KP0415ASG03RGBP-2SJB](../03-Component-Selection/PushButtons/KP0415ASG03RGBP-2SJB.jpg)
 
 * $14.85/each
-* [link to product](https://www.digikey.com/en/products/detail/nkk-switches/KP0415ASG03RGBP-2SJB/16351342)
+* [Link to product](https://www.digikey.com/en/products/detail/nkk-switches/KP0415ASG03RGBP-2SJB/16351342)
 
 | Pros | Cons |
 |------|------|
@@ -235,7 +235,7 @@ Rationale: The GME12864-17 is the OLED screen given to us in class, and the one 
 ![K12SC S 1.5 5N O LFTX](../03-Component-Selection/PushButtons/K12SCS1.55NOLFTX.jpg)
 
 * $4.05/each
-* [link to product](https://www.digikey.com/en/products/detail/c-k/K12SC-S-1-5-5N-O-LFTX/7056014)
+* [Link to product](https://www.digikey.com/en/products/detail/c-k/K12SC-S-1-5-5N-O-LFTX/7056014)
 
 | Pros | Cons |
 |------|------|
@@ -248,42 +248,32 @@ Rationale: The GME12864-17 is the OLED screen given to us in class, and the one 
 ![TL3300CF160Q](../03-Component-Selection/PushButtons/TL3300CF160Q.jpg)
 
 * $0.60/each
-* [link to product](https://www.digikey.com/en/products/detail/e-switch/TL3300CF160Q/2498433)
+* [Link to product](https://www.digikey.com/en/products/detail/e-switch/TL3300CF160Q/2498433)
 
 | Pros | Cons |
 |------|------|
-|      |      |
-|      |      |
-|      |      |
+| Large Size  | More Space on PCB |
+| Inexpensive | No illumination |
+| Low Operating Force (160 gf) |  |
 
 #### 5. B3U-1000P
 
 ![B3U-1000P](../03-Component-Selection/PushButtons/B3U-1000P.webp)
 
 * $0.90/each
-* [link to product](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3U-1000P/1534338)
+* [Link to product](https://www.digikey.com/en/products/detail/omron-electronics-inc-emc-div/B3U-1000P/1534338)
 
 | Pros | Cons |
 |------|------|
-|      |      |
-|      |      |
-|      |      |
+| Simple SPST | Small Size |
+| 2 Solder Joints | Hard to push actuator |
+| Inexpensive | n |
 
 #### Selection
 
-Choice: 
+Choice: **TL3300CF160Q** & **B3U-1000P**
 
-Rationale: The pushbuttons are uniquely hard to compare and search for, as they are based far more on form and feel than on pure specifications; however, I feel that the TSSLE 6868 R WNN are among the best and are similar to the pushbuttons I have used before. For the prototype control, I may look into making caps for these, which the button style is capable of. They also feature illumination, which could be an interesting stretch goal to improve the user experience.
-
-
-
-
-
-
-
-
-
-
+Rationale: The pushbuttons are uniquely hard to compare and search for, as they are based far more on form and feel than on pure specifications; however, I feel that the TL3300CF160Q is the best one, as it is not only large but also easy to push. This will make the HMI far easier to use, as the user will not need to use their fingernails to push the buttons, and should be able to use them without looking to orient their finger placement. The B3U-1000P is also selected specifically for the boot, enable, and debug buttons for my PCB. The user will not interface with these; they are strictly for my use, which makes their tiny size and simple features a positive for their role on the board.
 
 
 
