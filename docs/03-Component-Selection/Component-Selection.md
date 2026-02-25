@@ -267,7 +267,7 @@ Rationale: The GME12864-17 is the OLED screen given to us in class, and the one 
 |------|------|
 | Simple SPST | Small Size |
 | 2 Solder Joints | Hard to push actuator |
-| Inexpensive | n |
+| Inexpensive | No illumination |
 
 #### Selection
 
