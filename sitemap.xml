@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/01-Requirements/Requirements/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/01-Requirements/Requirements/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/02-Block-Diagram/Block-Diagram/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/02-Block-Diagram/Block-Diagram/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/03-Component-Selection/Component-Selection/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/03-Component-Selection/Component-Selection/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/04-Microcontroller-Selection/Microcontroller-Selection/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/04-Microcontroller-Selection/Microcontroller-Selection/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/05-Power-Budget/Power-Budget/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/05-Power-Budget/Power-Budget/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/06-BOM/BOM/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/06-BOM/BOM/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/07-Schematic/schematic/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/07-Schematic/schematic/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/</loc>
-         <lastmod>2026-02-25</lastmod>
+         <loc>https://jacob-alger.github.io/Jacob-Alger-314.github.io/Appendix/</loc>
+         <lastmod>2026-02-27</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
