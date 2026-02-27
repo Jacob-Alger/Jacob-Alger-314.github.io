@@ -37,7 +37,7 @@ To view the pages of this datasheet, you can you the above navigation bar, or th
 * To see the individual requirements for my subsystem, view the [*Requirements Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/01-Requirements/Requirements/)
 * To see the block diagram for my subsystem, view the [*Block Diagram Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/02-Block-Diagram/Block-Diagram/)
 * To see the component selection process, view the [*Component Selection Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/03-Component-Selection/Component-Selection/)
-* To see the microcontroller selected for my subsystem, view the [*Microcontroller Selection Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/04-Microcontroller-Selection/Microcontroller-Selection/)
+* To see the microcontroller selected, view the [*Microcontroller Selection Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/04-Microcontroller-Selection/Microcontroller-Selection/)
 * To see the calculated power budget for my subsystem, view the [*Power Budget Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/05-Power-Budget/Power-Budget/)
 * To see my schematic for my subsystem, view the [*Schematic Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/07-Schematic/schematic/)
 
