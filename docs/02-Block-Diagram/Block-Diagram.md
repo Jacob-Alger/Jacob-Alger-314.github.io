@@ -7,13 +7,13 @@ tags:
 
 ## Overview
 
-This block diagram illustrates the major components of my Human Machine Interface (HMI) Subsystem to show the connections and types of signals used. My subsystem will primarily feature a button array to control the rover and an OLED screen to display sensor data, parameters, and the status of other subsystems.
+This block diagram illustrates the major components of my Human Machine Interface (HMI) Subsystem, showing the connections and signal types used. My subsystem will primarily feature a button array for controlling the rover and an OLED screen for displaying sensor data, parameters, and the status of other subsystems.
 <br><br>
-The subsystem features a DC barrel jack power supply and jumpers to switch to battery power via the 8-pin connectors. There are two connectors, an upstream and a downstream, that will send data into and out of my board. The connectors will also be used to share battery power and provide a common ground for all subsystems.
+The subsystem features a DC barrel jack power supply and a power supply jumper to switch to upstream power via the 8-pin connector or to USB power. There are two connectors, an upstream and a downstream, that will send data into and out of my board. The connectors will also be used to share power downstream and provide a common ground for all subsystems.
 <br><br>
-My ESP32 will be programmed via the USB port on the DevKit, as shown in the Block Diagram. The ESP32 is also capable of I2C serial communication with the OLED screen, wireless communication via the built-in module, and other useful peripherals for my subsystem.
+My ESP32 will be programmed via a USB Micro B receptacle, as shown in the Block Diagram. There are the boot and enable buttons required to flash and program the ESP32 microcontroller. The ESP32 is also capable of I2C serial communication with the OLED screen and has plenty of I/Os and peripherals, as illustrated in the block diagram.
 <br><br>
-Since I am making the HMI, my subsystem will most likely be a separate controller, so it is also capable of using Bluetooth to communicate with the Communication subsystem. This connection is subject to change as my team learns more about communication systems and how to implement them.
+Since I am making the HMI, my subsystem is a separate remote controller from the rover, so it is paired with the Communication subsystem to communicate with the rover using Bluetooth. The full connection information is available in the Team Block Diagram on the Team 202 Datasheet.
 <br><br>
 
 ## Block Diagram 
