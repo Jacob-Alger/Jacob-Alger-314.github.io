@@ -20,9 +20,7 @@ This datasheet serves as a collection of my individual work toward this project.
 
 ### Project Summary
 
-* This needs to be updated to reflect <ins>your version</ins> of the team project, so when shared not via the team's report, the reader gets an idea of the direction of the project and how your work will contribute to the overall success.
-
-...
+Team 202 was tasked with developing a functional prototype of an exploration device that is capable of navigating and sensing its surroundings. We were given free rein to choose the kind of exploration device we wanted to develop, whether a submarine, a drone, or a rover. We were also allowed to select the exploration environment, and as a team, we decided to develop an earth-based rover that farmers or people with large plots of land could use to track or survey their land. We decided, after a concept selection process, to create the CropScout, a rover with a controllable arm equipped with sensor probes. This rover would be accompanied by a controller that can instruct the sensors to collect data, display it to the user, and allow the user to steer the rover and position its arm. I was given the task of developing the controller, specifically the Human-Machine Interface.
 
 > View the Team 202 Team Report [*here*.](https://egr314-s-2026-202.github.io/)
 
