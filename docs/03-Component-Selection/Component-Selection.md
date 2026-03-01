@@ -20,7 +20,7 @@ The following sections are the selected major components necessary for my Human-
 | Pros | Cons |
 |------|------|
 | ~1 A buck output; suitable for MCU + display | Low switching freq → large L/C components |
-| Wide input range; stable SMPS regulation | Requires careful PCB layout & filtering |
+| Wide input range; stable SMPS regulation | Requires 1N5822 Diode; Low supply on Digikey |
 | Good efficiency vs. linear regulators | Higher quiescent current than modern parts |
 
 #### 2. LM2675MX-3.3/NOPB
@@ -49,11 +49,24 @@ The following sections are the selected major components necessary for my Human-
 | Synchronous, very low IQ, high efficiency | More complex control/features |
 | High freq (≈1–2.25 MHz) → very small passives | Higher cost vs. legacy regulators |
 
+#### 4. LM2575D2T-3.3R4G
+
+![LM2575D2T-3.3R4G](../03-Component-Selection/VoltageRegulators/LM2575D2T-3.3R4G.webp)
+
+* $2.16/each
+* [Link to product](https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688)
+
+| Pros | Cons |
+|------|------|
+| ~1 A buck output; suitable for MCU + display | Low switching freq → large L/C components |
+| Wide input range; stable SMPS regulation | Requires careful PCB layout & filtering |
+| Good efficiency vs. linear regulators | Higher quiescent current than modern parts |
+
 #### Selection
 
-Choice: **LM2575-3.3WU-TR**
+Choice: **LM2575D2T-3.3R4G**
 
-Rationale: I have selected the LM2575-3.3WU-TR because it is not only the least expensive option but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem.
+Rationale: I have selected the LM2575D2T-3.3R4G because it is not only one of the least expensive option but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem. The other voltage regulators required inductors and diodes that were hard to source, so this option that matches the components we used in class is the best fit.
 
 ### **Barrel Jack Adapter**
 
