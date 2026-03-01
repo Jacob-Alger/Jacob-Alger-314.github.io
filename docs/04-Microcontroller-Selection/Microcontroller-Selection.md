@@ -6,15 +6,15 @@ title: HMI Microcontroller Selection
 * Peripherals Needed: I2C, UART, GPIO (~10), USB, Bluetooth
 * **ESP32-S3-WROOM-1-N4**: 36 GPIOs, *“ESP32-S3 integrates a rich set of peripherals including SPI, LCD, Camera interface, UART, I2C, I2S, remote control, pulse counter, LED PWM, USB Serial/JTAG, MCPWM, SD/MMC host controller, TWAI® controller (compatible with ISO 11898-1, i.e., CAN Specification 2.0), ADC, touch sensor, and temperature sensor. It also includes a full-speed USB 2.0 On-The-Go (OTG) interface to enable USB communication.”*
 
-I have selected the ESP32-S3-WROOM-1-N4 because I know it will cover everything I need for my subsystem. I have reached this conclusion using the reasoning and selection process outlined below. The ESP32-S3-WROOM-1-N4 supports I2C, UART, and GPIO, which is everything I need to build my subsystem. If later I realize an issue with this process that I didn't see, I will redo it and select a new microcontroller type, but it will most likely be an ESP32 device, as that is what most OLED screens prefer.
+I have selected the ESP32-S3-WROOM-1-N4 because I know it will cover everything I need for my subsystem. I have reached this conclusion using the reasoning and selection process outlined below. The ESP32-S3-WROOM-1-N4 supports I2C, UART, and GPIO, which is everything I need to build my subsystem. If later I realize there's an issue with this process I didn't see, I will redo it and select a new microcontroller type, but it will most likely be an ESP32, as that is what most OLED screens prefer.
 
-In *Table 1* below, I have left a few sections blank because I need to become more familiar with my project before I can fill them in. However, as I find useful things I will save them in the table for later use.
+In *Table 1* below, I have left a few sections blank because I need to become more familiar with my project before I can fill them in. However, as I find useful things, I will save them in the table for later use.
 
 *Table 1: ESP32 Info*
 
-| ESP Info                                      | Answer | Help  |
+| ESP Info                                      | Answer | Notes  |
 | --------------------------------------------- | ------ | ------------------------------------------------------------------------------------------------------- |
-| Model                                         | ESP32-S3-WROOM-1-N4      |   |
+| Model                                         | ESP32-S3-WROOM-1-N4      | Surface Mount module |
 | Product Page URL                              | [Espressif.com](https://www.espressif.com/en/module/esp32-s3-wroom-1-en)      |          |
 | ESP32-S3-WROOM-1-N4 Datasheet URL             | [Datasheet PDf](https://documentation.espressif.com/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf)      |   |
 | ESP32 S3 Datasheet URL                        | [Datasheet PDF](https://documentation.espressif.com/esp32-s3_datasheet_en.pdf)      |  |
@@ -24,18 +24,19 @@ In *Table 1* below, I have left a few sections blank because I need to become mo
 | External Resources URL(s)                     | ?      | Search on Google and YouTube for other resources for each specific microcontroller.   |
 | Unit cost                                     | $5.06     |    |
 | Absolute Maximum current <br> (for entire IC)        | 1.5 A or 1500 mA      |  |
-| Supply Voltage Range                          | 0.3V / 3.3V / 3.6 V      |   |
+| Supply Voltage Range                          | 0.3V / 3.3V / 3.6 V      | Min / Ideal / Max |
 | Maximum GPIO current <br> (per pin)           | 40 mA      |  |
 | Supports External Interrupts?                 | Yes      | |
-| Required Programming Hardware, Cost, URL      | ?      |  |
+| Required Programming Hardware, Cost, URL      | USB Micro B Receptacle, $0.78, [Digikey](https://www.digikey.com/en/products/detail/jae-electronics/DX4R005JJ2R1800/3903229?s=N4IgTCBcDaIGwHYAMBaMiCsKCMKByAIiALoC%2BQA)  | Also requires Boot and Enable Buttons, see Component Selection and Schematic for more information |
 
 ## Subsystem Explanation
 
-My subsystem, the Human-Machine Interface, will need to facilitate device control and sensor data reading for my team. My subsystem will need a screen, specifically an OLED, that can display data in both numerical and graphical form, so the user can read and understand the exploration device's sensing. The OLED screen will also let the user know which part of the rover they are currently controlling: the wheels or the arm subsystems. Control will be via pushbuttons for movement, selection, and menu navigation. The buttons should also allow the user to change parameters to some extent. Then the system will need to communicate with the communication subsystem, which will be sending buttons imputs and receiving sensor data. All of these features will need to be facilitated by the microcontroller for reading signals, displaying, and interpreting user input.
+My subsystem, the Human-Machine Interface, will need to facilitate device control and sensor data reading for my team. My subsystem will need a screen, specifically an OLED, that can display data in both numerical and graphical formats, so the user can read and understand the exploration device's sensing data. The OLED screen will also let the user know which part of the rover they are currently controlling: the wheels or the arm subsystems. Control will be via pushbuttons for movement, selection, and menu navigation. The buttons should also allow the user to change parameters to some extent. Then the system will need to communicate with the communication subsystem, which will send button inputs and receive sensor data. All of these features will need to be facilitated by the microcontroller for reading signals, displaying, and interpreting user input.
 
 ## Chip Compatibility
 
 * OLED - ESP32 can handle since we are using it in class. Should be able to use any OLED with I2C and appropriate libraries. The ESP32-S3-WROOM-1-N4 can manage the OLED display, interpret button inputs, and communicate via UART.
+* Buttons - ESP32, like any microcontroller, has plenty of GPIOs that can be used with pushbuttons to interpret input signals. The ESP32-S3-WROOM-1-N4 has internal pullups on certain pins, but I plan to use external pullups on every button for safety.
 
 ## Pinout Diagram and Table
 
