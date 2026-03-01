@@ -1007,22 +1007,22 @@
 <li>Peripherals Needed: I2C, UART, GPIO (~10), USB, Bluetooth</li>
 <li><strong>ESP32-S3-WROOM-1-N4</strong>: 36 GPIOs, <em>“ESP32-S3 integrates a rich set of peripherals including SPI, LCD, Camera interface, UART, I2C, I2S, remote control, pulse counter, LED PWM, USB Serial/JTAG, MCPWM, SD/MMC host controller, TWAI® controller (compatible with ISO 11898-1, i.e., CAN Specification 2.0), ADC, touch sensor, and temperature sensor. It also includes a full-speed USB 2.0 On-The-Go (OTG) interface to enable USB communication.”</em></li>
 </ul>
-<p>I have selected the ESP32-S3-WROOM-1-N4 because I know it will cover everything I need for my subsystem. I have reached this conclusion using the reasoning and selection process outlined below. The ESP32-S3-WROOM-1-N4 supports I2C, UART, and GPIO, which is everything I need to build my subsystem. If later I realize an issue with this process that I didn't see, I will redo it and select a new microcontroller type, but it will most likely be an ESP32 device, as that is what most OLED screens prefer.</p>
-<p>In <em>Table 1</em> below, I have left a few sections blank because I need to become more familiar with my project before I can fill them in. However, as I find useful things I will save them in the table for later use.</p>
+<p>I have selected the ESP32-S3-WROOM-1-N4 because I know it will cover everything I need for my subsystem. I have reached this conclusion using the reasoning and selection process outlined below. The ESP32-S3-WROOM-1-N4 supports I2C, UART, and GPIO, which is everything I need to build my subsystem. If later I realize there's an issue with this process I didn't see, I will redo it and select a new microcontroller type, but it will most likely be an ESP32, as that is what most OLED screens prefer.</p>
+<p>In <em>Table 1</em> below, I have left a few sections blank because I need to become more familiar with my project before I can fill them in. However, as I find useful things, I will save them in the table for later use.</p>
 <p><em>Table 1: ESP32 Info</em></p>
 <table>
 <thead>
 <tr>
 <th>ESP Info</th>
 <th>Answer</th>
-<th>Help</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Model</td>
 <td>ESP32-S3-WROOM-1-N4</td>
-<td></td>
+<td>Surface Mount module</td>
 </tr>
 <tr>
 <td>Product Page URL</td>
@@ -1072,7 +1072,7 @@
 <tr>
 <td>Supply Voltage Range</td>
 <td>0.3V / 3.3V / 3.6 V</td>
-<td></td>
+<td>Min / Ideal / Max</td>
 </tr>
 <tr>
 <td>Maximum GPIO current <br> (per pin)</td>
@@ -1086,16 +1086,17 @@
 </tr>
 <tr>
 <td>Required Programming Hardware, Cost, URL</td>
-<td>?</td>
-<td></td>
+<td>USB Micro B Receptacle, $0.78, <a href="https://www.digikey.com/en/products/detail/jae-electronics/DX4R005JJ2R1800/3903229?s=N4IgTCBcDaIGwHYAMBaMiCsKCMKByAIiALoC%2BQA">Digikey</a></td>
+<td>Also requires Boot and Enable Buttons, see Component Selection and Schematic for more information</td>
 </tr>
 </tbody>
 </table>
 <h2 id="subsystem-explanation">Subsystem Explanation</h2>
-<p>My subsystem, the Human-Machine Interface, will need to facilitate device control and sensor data reading for my team. My subsystem will need a screen, specifically an OLED, that can display data in both numerical and graphical form, so the user can read and understand the exploration device's sensing. The OLED screen will also let the user know which part of the rover they are currently controlling: the wheels or the arm subsystems. Control will be via pushbuttons for movement, selection, and menu navigation. The buttons should also allow the user to change parameters to some extent. Then the system will need to communicate with the communication subsystem, which will be sending buttons imputs and receiving sensor data. All of these features will need to be facilitated by the microcontroller for reading signals, displaying, and interpreting user input.</p>
+<p>My subsystem, the Human-Machine Interface, will need to facilitate device control and sensor data reading for my team. My subsystem will need a screen, specifically an OLED, that can display data in both numerical and graphical formats, so the user can read and understand the exploration device's sensing data. The OLED screen will also let the user know which part of the rover they are currently controlling: the wheels or the arm subsystems. Control will be via pushbuttons for movement, selection, and menu navigation. The buttons should also allow the user to change parameters to some extent. Then the system will need to communicate with the communication subsystem, which will send button inputs and receive sensor data. All of these features will need to be facilitated by the microcontroller for reading signals, displaying, and interpreting user input.</p>
 <h2 id="chip-compatibility">Chip Compatibility</h2>
 <ul>
 <li>OLED - ESP32 can handle since we are using it in class. Should be able to use any OLED with I2C and appropriate libraries. The ESP32-S3-WROOM-1-N4 can manage the OLED display, interpret button inputs, and communicate via UART.</li>
+<li>Buttons - ESP32, like any microcontroller, has plenty of GPIOs that can be used with pushbuttons to interpret input signals. The ESP32-S3-WROOM-1-N4 has internal pullups on certain pins, but I plan to use external pullups on every button for safety.</li>
 </ul>
 <h2 id="pinout-diagram-and-table">Pinout Diagram and Table</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../ESP32-S3-WROOM-1-N4_PinoutFigure.png" data-desc-position="bottom"><img alt="Pinout Diagram" src="../ESP32-S3-WROOM-1-N4_PinoutFigure.png"></a></p>
