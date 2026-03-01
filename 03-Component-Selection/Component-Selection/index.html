@@ -685,6 +685,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#4-lm2575d2t-33r4g" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. LM2575D2T-3.3R4G
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#selection" class="md-nav__link">
     <span class="md-ellipsis">
       Selection
@@ -1262,6 +1271,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#4-lm2575d2t-33r4g" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. LM2575D2T-3.3R4G
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#selection" class="md-nav__link">
     <span class="md-ellipsis">
       Selection
@@ -1564,7 +1582,7 @@
 </tr>
 <tr>
 <td>Wide input range; stable SMPS regulation</td>
-<td>Requires careful PCB layout &amp; filtering</td>
+<td>Requires 1N5822 Diode; Low supply on Digikey</td>
 </tr>
 <tr>
 <td>Good efficiency vs. linear regulators</td>
@@ -1628,9 +1646,37 @@
 </tr>
 </tbody>
 </table>
+<h4 id="4-lm2575d2t-33r4g">4. LM2575D2T-3.3R4G</h4>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../VoltageRegulators/LM2575D2T-3.3R4G.webp" data-desc-position="bottom"><img alt="LM2575D2T-3.3R4G" src="../VoltageRegulators/LM2575D2T-3.3R4G.webp"></a></p>
+<ul>
+<li>$2.16/each</li>
+<li><a href="https://www.digikey.com/en/products/detail/onsemi/LM2575D2T-3-3R4G/1476688">Link to product</a></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>~1 A buck output; suitable for MCU + display</td>
+<td>Low switching freq → large L/C components</td>
+</tr>
+<tr>
+<td>Wide input range; stable SMPS regulation</td>
+<td>Requires careful PCB layout &amp; filtering</td>
+</tr>
+<tr>
+<td>Good efficiency vs. linear regulators</td>
+<td>Higher quiescent current than modern parts</td>
+</tr>
+</tbody>
+</table>
 <h4 id="selection">Selection</h4>
-<p>Choice: <strong>LM2575-3.3WU-TR</strong></p>
-<p>Rationale: I have selected the LM2575-3.3WU-TR because it is not only the least expensive option but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem.</p>
+<p>Choice: <strong>LM2575D2T-3.3R4G</strong></p>
+<p>Rationale: I have selected the LM2575D2T-3.3R4G because it is not only one of the least expensive option but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem. The other voltage regulators required inductors and diodes that were hard to source, so this option that matches the components we used in class is the best fit.</p>
 <h3 id="barrel-jack-adapter"><strong>Barrel Jack Adapter</strong></h3>
 <h4 id="1-fc68148s">1. FC68148S</h4>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../BarrelJacks/FC68148S.jpg" data-desc-position="bottom"><img alt="FC68148S" src="../BarrelJacks/FC68148S.jpg"></a></p>
