@@ -66,6 +66,8 @@ The following sections are the selected major components necessary for my Human-
 
 Choice: **LM2575D2T-3.3R4G**
 
+![LM2575D2T-3.3R4G](../03-Component-Selection/VoltageRegulators/LM2575D2T-3.3R4G.webp)
+
 Rationale: I have selected the LM2575D2T-3.3R4G because it is not only one of the least expensive option but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem. The other voltage regulators required inductors and diodes that were hard to source, so this option that matches the components we used in class is the best fit.
 
 ### **Barrel Jack Adapter**
@@ -115,6 +117,8 @@ Rationale: I have selected the LM2575D2T-3.3R4G because it is not only one of th
 
 Choice: **PJ-102AH**
 
+![PJ-102AH](../03-Component-Selection/BarrelJacks/PJ-102AH.png)
+
 Rationale: When researching barrel jack adapters, there were few options for surface-mount adapters that met the specifications I required. From the surface-mount options, the FC68148S appears to be the best. However, through-hole is generally better for connections, so I am going to go with the barrel jack I used last semester, the PJ-102AH. It is capable of everything I will need for this subsystem, and I know it is reliable.
 
 ### **Power Supply**
@@ -161,6 +165,8 @@ Rationale: When researching barrel jack adapters, there were few options for sur
 #### Selection
 
 Choice: **L6R24-120**
+
+![L6R24-120](../03-Component-Selection/PowerSupply/L6R24-120.webp)
 
 Rationale: The L6R24-120 power supply is very similar to the one provided in the lab kits, so I feel that it is the most logical choice if I don't end up simply using the one in my lab kit. It is also the least expensive option, which is valuable for keeping my subsystem within budget.
 
@@ -211,6 +217,8 @@ Rationale: The L6R24-120 power supply is very similar to the one provided in the
 #### Selection
 
 Choice: **GME12864-17**
+
+![GME12864-17](../03-Component-Selection/OLED/GME12864-17.webp)
 
 Rationale: The GME12864-17 is the OLED screen given to us in class, and the one we will be proving proficiency with in the labs, so it is a logical option for my subsystem; however, the MDOB128064V2V-WI is a very similar option that is larger, and more importantly, has an easily obtainable datasheet on DigiKey, which is critical for this project. I will move forward with GME12864-17, as I know how to make it work and can find datasheets for similar models, which should be sufficient, since I will just be using header pins to connect the screen to my board.
 
@@ -285,6 +293,8 @@ Rationale: The GME12864-17 is the OLED screen given to us in class, and the one 
 #### Selection
 
 Choice: **TL3300CF160Q** & **B3U-1000P**
+
+![TL3300CF160Q](../03-Component-Selection/PushButtons/TL3300CF160Q.jpg) ![B3U-1000P](../03-Component-Selection/PushButtons/B3U-1000P.webp) 
 
 Rationale: The pushbuttons are uniquely hard to compare and search for, as they are based far more on form and feel than on pure specifications; however, I feel that the TL3300CF160Q is the best one, as it is not only large but also easy to push. This will make the HMI far easier to use, as the user will not need to use their fingernails to push the buttons, and should be able to use them without looking to orient their finger placement. The B3U-1000P is also selected specifically for the boot, enable, and debug buttons for my PCB. The user will not interface with these; they are strictly for my use, which makes their tiny size and simple features a positive for their role on the board.
 
