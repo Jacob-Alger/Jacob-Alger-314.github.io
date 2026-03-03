@@ -8,11 +8,11 @@ tags:
 > This page is currently a work in progress! Please return later.
 
 ## Overview
-Written context needs to added!
+Written context needs to be added!
 
 ## Bill of Materials
 
-*Table ##: An example of one approach to adding your BOM table to this section.*
+*Table 1: Human-Machine Interface Bill of Materials*
 
 | Part Name / Description | Qty | Unit Cost | Total Cost | Manufacturer | Manufacturer # | Supplier | Vendor Link | Datasheet Link | Schematic Reference Designators |
 |--------------------------|-----|-----------|------------|--------------|----------------|----------|------------|----------------|----------------------------------|
@@ -41,8 +41,10 @@ Written context needs to added!
 | 40 Pin Male Header Connector | 1 | $- | $- | Lystaii | n/a | Peralta | [Link](https://www.amazon.com/Header-Lystaii-Pin-Connector-Electronic/dp/B06ZZN8L9S/ref=sr_1_15?dchild=1&keywords=40+pin+header+male+to+male&qid=1608606507&sr=8-15) | n/a | J2, J3, J4, J5, J6, J8, J9, J10, J11 |
 | 2-pin Female Jumper Connector | 4 | $- | $- | n/a | n/a | Peralta | n/a | n/a | J3, J5, J8, J9 |
 
+> Note: This table scrolls side to side. Please scroll to see all of the information.
+
 ## Resouces
 
-The Bill of Material as a PDF download is available [*here*](PDF_For_BOM_EXAMPLE.pdf).
+The Bill of Materials is available as a PDF [*here*](PDF_For_BOM_EXAMPLE.pdf) and as an XLSX download [*here*](PDF_For_BOM_EXAMPLE.pdf).
 
 
