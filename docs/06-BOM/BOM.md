@@ -45,7 +45,7 @@ However, to account for issues, the order subtotal with extras is $29.35
 | Cartridge Fuse Holder 5x20mm | 1 | $0.75 | $0.75 | Keystone Electronics | 4628 | Digikey, Peralta | [Link](https://www.digikey.com/en/products/detail/keystone-electronics/4628/2137316) | [PDF](https://www.keyelco.com/userAssets/file/K75p50.pdf) | F1 |
 | 40 Pin Male Header Connector | 1 | $- | $- | Lystaii | n/a | Peralta | [Link](https://www.amazon.com/Header-Lystaii-Pin-Connector-Electronic/dp/B06ZZN8L9S/ref=sr_1_15?dchild=1&keywords=40+pin+header+male+to+male&qid=1608606507&sr=8-15) | n/a | J2, J3, J4, J6, J7, J8, J9, J10, J11, J12 |
 | 40 Pin Female Header Connector | 1 | $- | $- | Qunqi | n/a | Peralta | [Link](https://www.amazon.com/Qunqi-2-54mm-Straight-Connector-Arduino/dp/B07CGGSDWF/ref=sr_1_17?dchild=1&keywords=female+header+strips&qid=1595380282&sr=8-17) | n/a | U12 |
-| 2-pin Female Jumper Connector | 4 | $- | $- | n/a | n/a | Peralta | n/a | n/a | J3, J4, J6, J7, J9, J11 |
+| 2-pin Female Jumper Connector | 6 | $- | $- | n/a | n/a | Peralta | n/a | n/a | J3, J4, J6, J7, J9, J11 |
 
 > Note: This table scrolls side to side. Please scroll to see all of the information.
 
