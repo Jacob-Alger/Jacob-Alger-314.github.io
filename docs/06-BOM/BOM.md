@@ -7,13 +7,11 @@ tags:
 
 ## Overview
 
-Below in *Table 1* is the bill of materials for my entire subsystem. It includes every component, and any additional parts needed to construct my PCB. Every part is either sourced from DigiKey or Peralta 109. The DigiKey parts will be ordered, with additional instances in case of errors or losses, and kept within my alloted budget of **$60**. The Peralta parts are free for my use, and are mostly general parts like headers or jumpers. You can view this BOM in PDF or XLSX format below in the **Resources** section.
+The bill of materials for my entire subsystem is shown in* Table 1*. It includes all components and any additional parts needed to build my PCB. Every part is either sourced from DigiKey or Peralta 109. The DigiKey parts will be ordered, with additional instances in case of errors or losses, and kept within my allotted budget of **$60**. The Peralta parts are free for my use, and are mostly general parts like headers or jumpers. You can view this BOM in PDF or XLSX format in the **Resources** section below.
 
-The sum total of my subsystem is **$25.04**
-
-The minimum total of parts that need to be ordered is **$18.50**
-
-However, to account for issues, the order subtotal with extras is **$29.35**
+* The sum total of my subsystem is **$25.04**
+* The minimum total of parts that need to be ordered is **$18.50**
+* However, to account for issues, the order subtotal with extras is **$29.35**
 
 ## Bill of Materials
 
