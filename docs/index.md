@@ -35,5 +35,6 @@ To view the pages of this datasheet, which detail the process I went through to 
 * To see the component selection process, view the [*Component Selection Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/03-Component-Selection/Component-Selection/)
 * To see the microcontroller selected, view the [*Microcontroller Selection Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/04-Microcontroller-Selection/Microcontroller-Selection/)
 * To see the calculated power budget for my subsystem, view the [*Power Budget Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/05-Power-Budget/Power-Budget/)
+* To see bill of materials for my entire subsystem, view the [*BOM Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/06-BOM/BOM/)
 * To see my schematic for my subsystem, view the [*Schematic Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/07-Schematic/schematic/)
 
