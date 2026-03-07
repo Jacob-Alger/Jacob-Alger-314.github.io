@@ -6,9 +6,9 @@ title: HMI Power Budget
 
 To ensure that my selected components will still work in the worst-case scenario and to size the fuse in my subsystem, I prepared the following power budget, shown in **Figure 1** below. The power budget showcases every major component, its absolute maximum current draw, and the power rail it's on (with its associated voltage regulator).
 
-![power budget 1](EGR314_Power_Budget_1-rev1.png){style width:"350" height:"300;"}
+![power budget 1](EGR314_Power_Budget_1-rev2.png){style width:"350" height:"300;"}
 <br>
-![power budget 2](EGR314_Power_Budget_2-rev1.png){style width:"350" height:"300;"}
+![power budget 2](EGR314_Power_Budget_2-rev2.png){style width:"350" height:"300;"}
 **Figure 1: Power budget for Human-Machine Interface Subsystem**
 
 ## Conclusions
@@ -17,4 +17,4 @@ From the prepared power budget, it is evident that I have excess current. This m
 
 ## Resouces
 
-The power budget as a PDF download is available [*here*](EGR314-Power_Budget.pdf), and a Microsoft Excel Sheet [*here*](EGR314-Power_Budget.xlsx).
+The power budget as a PDF download is available [*here*](EGR314-Power_Budget-rev2.pdf), and a Microsoft Excel Sheet [*here*](EGR314-Power_Budget.xlsx).
