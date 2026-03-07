@@ -9,10 +9,10 @@ The schematic shown in **Figure 1** is for my Human-Machine Interface subsystem.
 Overall, the schematic covers every aspect of my subsystem that will be needed, both for basic functionality and for debugging/programming. Please view the schematic in **Figure 1**and the PDF or project ZIP files in the *Resources* section below.
 
 
-![HMI schematic](hmi_subsystem_314-rev3.png){style width:"350" height:"300;"}
+![HMI schematic](hmi_subsystem_314-rev4.png){style width:"350" height:"300;"}
 **Figure 1:** Human-Machine Interface Schematic.
 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](hmi_subsystem_314.pdf), and the Zip folder of the project [*here*](hmi_subsystem_314-rev3.png).
+The schematic as a PDF download is available [*here*](hmi_subsystem_314.pdf), and the Zip folder of the project [*here*](hmi_subsystem_314-rev4.png).
