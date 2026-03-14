@@ -15,4 +15,4 @@ Overall, the schematic covers every aspect of my subsystem that will be needed, 
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](hmi_subsystem_314.png), and the Zip folder of the project [*here*](hmi_subsystem_314-rev4.zip).
+The schematic as a PDF download is available [*here*](hmi_subsystem_314.pdf), and the Zip folder of the project [*here*](hmi_subsystem_314-rev4.zip).
