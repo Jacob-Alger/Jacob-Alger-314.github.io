@@ -29,6 +29,7 @@ The following table is the types of data we will be using in each message. As yo
 |----------------------------|--------|
 | String (ASCII char array)  | S:     |
 | Integer (8 Bit)            | I:     |
+| Integer (16 Bit)           | IL:    |
 | Float (32 Bit)             | F:     |
 
 ## Sent Messages
@@ -135,6 +136,8 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 
 ## Received Messages
 
+The received messages are mainly the returned sensor data, but there are also a few error and acknowledgement messages.
+
 ### Message Type 4 -- Accelerometer Value
 
 * Receives the Accelerometer Sensor Value as a Float
@@ -149,15 +152,15 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 
 ### Message Type 5 -- Arm Position Acknowledge
 
-* Receives the position achieved by the front arm
+* Receives the position achieved by the front arm as an int16 value.
 
-|            | Bytes 1–3 | Bytes 4–5 | Bytes 6–7 |
+|            | Bytes 1–3 | Bytes 4–6 | Bytes 7–8 |
 |------------|-----------|-----------|-----------|
 |            | Name      | Type      | Data      |
-|            | AA:       | I:        | #;        |
+|            | AA:       | IL:       | #;        |
 | Min        |           |           | -180;     |
 | Max        |           |           | 180;      |
-| Example    | AA:       | I:        | 90;       |
+| Example    | AA:       | IL:       | 90;       |
 
 ### Message Type 5 -- Arm Status
 
