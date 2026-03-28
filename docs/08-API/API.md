@@ -164,10 +164,10 @@ The received messages are mainly the returned sensor data, but there are also a 
 * Receives the position achieved by the front arm as an int16 value.
 * Full Example Message: **AZahAA:IL:90;YB**
 
-|            | Bytes 1–3 | Bytes 4–6 | Bytes 7–8 |
+|            | Bytes 1–3 | Bytes 4–6 | Bytes 7–9 |
 |------------|-----------|-----------|-----------|
 |            | Name      | Type      | Data      |
-|            | AA:       | IL:       | #;        |
+|            | AA:       | IL:       | ##;        |
 | Min        |           |           | -180;     |
 | Max        |           |           | 180;      |
 | Example    | AA:       | IL:       | 90;       |
