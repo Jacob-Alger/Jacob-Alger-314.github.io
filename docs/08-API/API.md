@@ -41,6 +41,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 * Broadcast: Everyone will turn on their debug LED and begin their systems
 * When I receive it back, begin my system and tell the user that Start was successful
 * If I don’t receive after 30 or so seconds, tell the user that Start was unsuccessful
+* Full Example Message: **AZhXST:S:Start;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–11 |
 |------------|-----------|-----------|------------|
@@ -53,6 +54,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 ### Message Type 3 -- Wheel Drive Mode
 
 * Allows the user to directly control the rover using the D-Pad on the HMI board.
+* Full Example Message: **AZhwWD:S:F;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–7              |
 |------------|-----------|-----------|------------------------|
@@ -65,6 +67,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 ### Message Type 4 -- Accelerometer Sensor Read
 
 * Prompts the Accelerometer Sensor to send its reading
+* Full Example Message: **AZhpAR:S:Read;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–10 |
 |------------|-----------|-----------|------------|
@@ -77,6 +80,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 ### Message Type 5 -- Arm Drive Mode
 
 * Allows the user to directly control the front arm using the D-Pad on the HMI board.
+* Full Example Message: **AZhaAD:S:U;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–7              |
 |------------|-----------|-----------|------------------------|
@@ -89,6 +93,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 ### Message Type 6 -- Temperature Sensor Read
 
 * Prompts the Temperature Sensor to send its reading
+* Full Example Message: **AZhtTR:S:Read;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–10 |
 |------------|-----------|-----------|------------|
@@ -101,6 +106,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 ### Message Type 6 -- Temperature Unit Change
 
 * Tells the Temperature Sensor to change its current unit of measurement
+* Full Example Message: **AZhtCU:S:C;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–7  |
 |------------|-----------|-----------|------------|
@@ -113,6 +119,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 ### Message Type 7 -- Humidity Sensor Read
 
 * Prompts the Humidity Sensor to send its reading
+* Full Example Message: **AZhtHR:S:Read;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–10 |
 |------------|-----------|-----------|------------|
@@ -125,6 +132,7 @@ Most of the messages being sent are simply prompting the respective subsystem, b
 ### Message Type 8 -- Metal Detector Read
 
 * Prompts the Metal Detector to send its reading
+* Full Example Message: **AZhmMR:S:Read;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–10 |
 |------------|-----------|-----------|------------|
@@ -141,6 +149,7 @@ The received messages are mainly the returned sensor data, but there are also a 
 ### Message Type 4 -- Accelerometer Value
 
 * Receives the Accelerometer Sensor Value as a Float
+* Full Example Message: **AZphAV:F:80.0;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–10 |
 |------------|-----------|-----------|------------|
@@ -153,6 +162,7 @@ The received messages are mainly the returned sensor data, but there are also a 
 ### Message Type 5 -- Arm Position Acknowledge
 
 * Receives the position achieved by the front arm as an int16 value.
+* Full Example Message: **AZahAA:IL:90;YB**
 
 |            | Bytes 1–3 | Bytes 4–6 | Bytes 7–8 |
 |------------|-----------|-----------|-----------|
@@ -165,6 +175,7 @@ The received messages are mainly the returned sensor data, but there are also a 
 ### Message Type 5 -- Arm Status
 
 * Receives the current status from the arm subsystem
+* Full Example Message: **AZahAS:S:Moving;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–12                     |
 |------------|-----------|-----------|--------------------------------|
@@ -177,6 +188,7 @@ The received messages are mainly the returned sensor data, but there are also a 
 ### Message Type 5 -- Arm Error
 
 * Receives the current error value from the arm subsystem
+* Full Example Message: **AZahAE:I:1;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–7 |
 |------------|-----------|-----------|-----------|
@@ -189,6 +201,7 @@ The received messages are mainly the returned sensor data, but there are also a 
 ### Message Type 6 -- Temperature Value and Unit
 
 * Receives the Temperature Sensor Value as a Float and the current unit of measurement as a string
+* Full Example Message: **AZthTV:F:76.5;TT:S:F;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–10 | Bytes 11–13 | Bytes 14–15 | Bytes 16–17 |
 |------------|-----------|-----------|------------|--------------|--------------|--------------|
@@ -201,6 +214,7 @@ The received messages are mainly the returned sensor data, but there are also a 
 ### Message Type 7 -- Humidity Value
 
 * Receives the Humidity Sensor Value as a Float
+* Full Example Message: **AZthHV:F:31.2;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–10 |
 |------------|-----------|-----------|------------|
@@ -213,6 +227,7 @@ The received messages are mainly the returned sensor data, but there are also a 
 ### Message Type 8 -- Metal Detector Value
 
 * Receives the Metal Detector Value as a String
+* Full Example Message: **AZmhMD:S:T;YB**
 
 |            | Bytes 1–3 | Bytes 4–5 | Bytes 6–7  |
 |------------|-----------|-----------|------------|
@@ -221,16 +236,6 @@ The received messages are mainly the returned sensor data, but there are also a 
 | Min        |           |           | F;         |
 | Max        |           |           | T;         |
 | Example    | MD:       | S:        | T;         |
-
-
-
-
-
-
-
-
-
-
 
 
 
