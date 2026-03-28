@@ -9,6 +9,8 @@ tags:
 as part of<br>
 <font size= "8"> Exploration Device Project</font><br>
 for<br>
+<font size="5"> *S.C.O.U.T.S* </font><br>
+<font size="4"> *Super Cool Original and Unique Technology Systems* </font><br>  
 <font size= "5"> Team 202 </font><br>
 
 **Submission: March 6, 2026**
