@@ -7,7 +7,8 @@ tags:
 <center>
 <font size= "6">Jacob Alger's Datasheet</font><br>
 as part of<br>
-<font size= "8"> Exploration Device Project</font><br>
+<font size= "8"> Exploration Device Project:</font><br>
+<font size= "7"> CropSCOUT</font><br>
 for<br>
 <font size= "6"> **Team 202** </font><br>
 <font size="5"> *S.C.O.U.T.S* </font><br>
