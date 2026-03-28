@@ -1393,8 +1393,9 @@
   <h1>HMI API</h1>
 
 <h2 id="application-programming-interface">Application Programming Interface</h2>
-<p>Overview</p>
+<p>As the Human-Machine Interface subsystem, it is my responsibility to package and send instructions to nearly every other subsystem so that the user can control and utilize the features of the CropSCOUT. On this page, you can view all the messages I send and my subsystem receives. Every message fits within the packet specifications and is laid out by the class protocol, including prefix, suffix, source and destination IDs, and a message of less than 58 bytes.</p>
 <h3 id="subsystem-identification">Subsystem Identification</h3>
+<p>The following table is the identifier for each subsystem from our team. These IDs will be used in the packaging of every message as the source or destination.</p>
 <table>
 <thead>
 <tr>
@@ -1420,12 +1421,12 @@
 <td>Asadbek</td>
 </tr>
 <tr>
-<td>Pressure/Accel.</td>
+<td>Pressure/Accelerometer</td>
 <td>p</td>
 <td>Tyler</td>
 </tr>
 <tr>
-<td>Arm</td>
+<td>Front Arm</td>
 <td>a</td>
 <td>Caleb</td>
 </tr>
@@ -1435,7 +1436,7 @@
 <td>Aaron</td>
 </tr>
 <tr>
-<td>Temp/Humidity</td>
+<td>Temperature/Humidity</td>
 <td>t</td>
 <td>Isaiah</td>
 </tr>
@@ -1447,6 +1448,7 @@
 </tbody>
 </table>
 <h3 id="message-data-types">Message Data Types</h3>
+<p>The following table is the types of data we will be using in each message. As you look at the messages on this page, please be aware of what each message abbreviation means.</p>
 <table>
 <thead>
 <tr>
@@ -1470,7 +1472,13 @@
 </tbody>
 </table>
 <h2 id="sent-messages">Sent Messages</h2>
+<p>Most of the messages being sent are simply prompting the respective subsystem, but there are also the drive messages, which use strings, that will be assigned to buttons, to allow the user to directly control the wheels and arm.</p>
 <h3 id="message-type-1-start-broadcast">Message Type 1 -- Start Broadcast</h3>
+<ul>
+<li>Broadcast: Everyone will turn on their debug LED and begin their systems</li>
+<li>When I receive it back, begin my system and tell the user that Start was successful</li>
+<li>If I don’t receive after 30 or so seconds, tell the user that Start was unsuccessful</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1514,6 +1522,9 @@
 </tbody>
 </table>
 <h3 id="message-type-3-wheel-drive-mode">Message Type 3 -- Wheel Drive Mode</h3>
+<ul>
+<li>Allows the user to directly control the rover using the D-Pad on the HMI board.</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1557,6 +1568,9 @@
 </tbody>
 </table>
 <h3 id="message-type-4-accelerometer-sensor-read">Message Type 4 -- Accelerometer Sensor Read</h3>
+<ul>
+<li>Prompts the Accelerometer Sensor to send its reading</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1600,6 +1614,9 @@
 </tbody>
 </table>
 <h3 id="message-type-5-arm-drive-mode">Message Type 5 -- Arm Drive Mode</h3>
+<ul>
+<li>Allows the user to directly control the front arm using the D-Pad on the HMI board.</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1643,6 +1660,9 @@
 </tbody>
 </table>
 <h3 id="message-type-6-temperature-sensor-read">Message Type 6 -- Temperature Sensor Read</h3>
+<ul>
+<li>Prompts the Temperature Sensor to send its reading</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1686,6 +1706,9 @@
 </tbody>
 </table>
 <h3 id="message-type-6-temperature-unit-change">Message Type 6 -- Temperature Unit Change</h3>
+<ul>
+<li>Tells the Temperature Sensor to change its current unit of measurement</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1729,6 +1752,9 @@
 </tbody>
 </table>
 <h3 id="message-type-7-humidity-sensor-read">Message Type 7 -- Humidity Sensor Read</h3>
+<ul>
+<li>Prompts the Humidity Sensor to send its reading</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1772,6 +1798,9 @@
 </tbody>
 </table>
 <h3 id="message-type-8-metal-detector-read">Message Type 8 -- Metal Detector Read</h3>
+<ul>
+<li>Prompts the Metal Detector to send its reading</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1816,6 +1845,9 @@
 </table>
 <h2 id="received-messages">Received Messages</h2>
 <h3 id="message-type-4-accelerometer-value">Message Type 4 -- Accelerometer Value</h3>
+<ul>
+<li>Receives the Accelerometer Sensor Value as a Float</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1859,6 +1891,9 @@
 </tbody>
 </table>
 <h3 id="message-type-5-arm-position-acknowledge">Message Type 5 -- Arm Position Acknowledge</h3>
+<ul>
+<li>Receives the position achieved by the front arm</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1902,6 +1937,9 @@
 </tbody>
 </table>
 <h3 id="message-type-5-arm-status">Message Type 5 -- Arm Status</h3>
+<ul>
+<li>Receives the current status from the arm subsystem</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1945,6 +1983,9 @@
 </tbody>
 </table>
 <h3 id="message-type-5-arm-error">Message Type 5 -- Arm Error</h3>
+<ul>
+<li>Receives the current error value from the arm subsystem</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -1988,6 +2029,9 @@
 </tbody>
 </table>
 <h3 id="message-type-6-temperature-value-and-unit">Message Type 6 -- Temperature Value and Unit</h3>
+<ul>
+<li>Receives the Temperature Sensor Value as a Float and the current unit of measurement as a string</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -2012,7 +2056,7 @@
 </tr>
 <tr>
 <td></td>
-<td>TR:</td>
+<td>TV:</td>
 <td>F:</td>
 <td>####;</td>
 <td>TT:</td>
@@ -2039,7 +2083,7 @@
 </tr>
 <tr>
 <td>Example</td>
-<td>TR:</td>
+<td>TV:</td>
 <td>F:</td>
 <td>76.5;</td>
 <td>TT:</td>
@@ -2049,6 +2093,9 @@
 </tbody>
 </table>
 <h3 id="message-type-7-humidity-value">Message Type 7 -- Humidity Value</h3>
+<ul>
+<li>Receives the Humidity Sensor Value as a Float</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -2092,6 +2139,9 @@
 </tbody>
 </table>
 <h3 id="message-type-8-metal-detector-value">Message Type 8 -- Metal Detector Value</h3>
+<ul>
+<li>Receives the Metal Detector Value as a String</li>
+</ul>
 <table>
 <thead>
 <tr>
