@@ -1482,6 +1482,7 @@
 <li>Broadcast: Everyone will turn on their debug LED and begin their systems</li>
 <li>When I receive it back, begin my system and tell the user that Start was successful</li>
 <li>If I don’t receive after 30 or so seconds, tell the user that Start was unsuccessful</li>
+<li>Full Example Message: <strong>AZhXST:S:Start;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1528,6 +1529,7 @@
 <h3 id="message-type-3-wheel-drive-mode">Message Type 3 -- Wheel Drive Mode</h3>
 <ul>
 <li>Allows the user to directly control the rover using the D-Pad on the HMI board.</li>
+<li>Full Example Message: <strong>AZhwWD:S:F;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1574,6 +1576,7 @@
 <h3 id="message-type-4-accelerometer-sensor-read">Message Type 4 -- Accelerometer Sensor Read</h3>
 <ul>
 <li>Prompts the Accelerometer Sensor to send its reading</li>
+<li>Full Example Message: <strong>AZhpAR:S:Read;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1620,6 +1623,7 @@
 <h3 id="message-type-5-arm-drive-mode">Message Type 5 -- Arm Drive Mode</h3>
 <ul>
 <li>Allows the user to directly control the front arm using the D-Pad on the HMI board.</li>
+<li>Full Example Message: <strong>AZhaAD:S:U;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1666,6 +1670,7 @@
 <h3 id="message-type-6-temperature-sensor-read">Message Type 6 -- Temperature Sensor Read</h3>
 <ul>
 <li>Prompts the Temperature Sensor to send its reading</li>
+<li>Full Example Message: <strong>AZhtTR:S:Read;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1712,6 +1717,7 @@
 <h3 id="message-type-6-temperature-unit-change">Message Type 6 -- Temperature Unit Change</h3>
 <ul>
 <li>Tells the Temperature Sensor to change its current unit of measurement</li>
+<li>Full Example Message: <strong>AZhtCU:S:C;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1758,6 +1764,7 @@
 <h3 id="message-type-7-humidity-sensor-read">Message Type 7 -- Humidity Sensor Read</h3>
 <ul>
 <li>Prompts the Humidity Sensor to send its reading</li>
+<li>Full Example Message: <strong>AZhtHR:S:Read;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1804,6 +1811,7 @@
 <h3 id="message-type-8-metal-detector-read">Message Type 8 -- Metal Detector Read</h3>
 <ul>
 <li>Prompts the Metal Detector to send its reading</li>
+<li>Full Example Message: <strong>AZhmMR:S:Read;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1852,6 +1860,7 @@
 <h3 id="message-type-4-accelerometer-value">Message Type 4 -- Accelerometer Value</h3>
 <ul>
 <li>Receives the Accelerometer Sensor Value as a Float</li>
+<li>Full Example Message: <strong>AZphAV:F:80.0;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1898,6 +1907,7 @@
 <h3 id="message-type-5-arm-position-acknowledge">Message Type 5 -- Arm Position Acknowledge</h3>
 <ul>
 <li>Receives the position achieved by the front arm as an int16 value.</li>
+<li>Full Example Message: <strong>AZahAA:IL:90;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1944,6 +1954,7 @@
 <h3 id="message-type-5-arm-status">Message Type 5 -- Arm Status</h3>
 <ul>
 <li>Receives the current status from the arm subsystem</li>
+<li>Full Example Message: <strong>AZahAS:S:Moving;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -1990,6 +2001,7 @@
 <h3 id="message-type-5-arm-error">Message Type 5 -- Arm Error</h3>
 <ul>
 <li>Receives the current error value from the arm subsystem</li>
+<li>Full Example Message: <strong>AZahAE:I:1;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -2036,6 +2048,7 @@
 <h3 id="message-type-6-temperature-value-and-unit">Message Type 6 -- Temperature Value and Unit</h3>
 <ul>
 <li>Receives the Temperature Sensor Value as a Float and the current unit of measurement as a string</li>
+<li>Full Example Message: <strong>AZthTV:F:76.5;TT:S:F;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -2100,6 +2113,7 @@
 <h3 id="message-type-7-humidity-value">Message Type 7 -- Humidity Value</h3>
 <ul>
 <li>Receives the Humidity Sensor Value as a Float</li>
+<li>Full Example Message: <strong>AZthHV:F:31.2;YB</strong></li>
 </ul>
 <table>
 <thead>
@@ -2146,6 +2160,7 @@
 <h3 id="message-type-8-metal-detector-value">Message Type 8 -- Metal Detector Value</h3>
 <ul>
 <li>Receives the Metal Detector Value as a String</li>
+<li>Full Example Message: <strong>AZmhMD:S:T;YB</strong></li>
 </ul>
 <table>
 <thead>
