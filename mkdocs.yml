@@ -4,7 +4,7 @@ repo_url: https://github.com/Jacob-Alger/Jacob-Alger-314.github.io
 edit_uri: edit/main/docs/
 theme:
   name: material
-  custom_dir: custom_theme/
+  custom_dir: custom_theme/partials
   palette:
     primary: green
     accent: amber
@@ -16,6 +16,7 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.tabs.overflow
     - toc.follow    
     - navigation.top
     - navigation.path
@@ -24,7 +25,7 @@ theme:
     - content.action.edit
     - navigation.footer
 #    - navigation.sections
-#    - navigation.expand
+    - navigation.expand
 #    - navigation.instant # doesn't work that well
 
 markdown_extensions:
@@ -67,3 +68,24 @@ extra:
     - icon: fontawesome/regular/file-code
       link: /2026_spring
       name: 2023 Site    
+
+nav:
+  - Home: index.md
+  - Requirements: 01-Requirements/Requirements.md
+  - Block Diagram: 02-Block-Diagram/Block-Diagram.md
+  - Component Selection: 03-Component-Selection/Component-Selection.md
+  - Microcontroller Selection: 04-Microcontroller-Selection/Microcontroller-Selection.md
+  - Power Budget: 05-Power-Budget/Power-Budget.md
+  - BOM: 06-BOM/BOM.md
+  - Schematic: 07-Schematic/schematic.md
+  - API: 08-API/API.md
+  - PCB: 09-PCB/pcb.md
+  - Reflection: 10-Reflection/Reflection.md
+  - Appendix: Appendix/index.md
+      #- A1 Component Selection: Component-Selection/Component-Selection-Process.md
+      #- A2a Microcontroller Selection: 02-Microcontroller-Selection/esp-32-table.md
+      #- A2b Microcontroller Selection: 02-Microcontroller-Selection/pic-table.md
+      #- A3 Component Selection: Component-Selection/Component-Selection-Process.md
+      #- A4a Examples to Remove: 04-Examples-to-Remove/another-subfile.md
+      #- A4b Examples to Remove: 04-Examples-to-Remove/charts.md
+      #- A4c Examples to Remove: 04-Examples-to-Remove/basic-markdown-examples.md
