@@ -2,7 +2,7 @@
 title: HMI PCB
 ---
 
-## PCB
+## Overview
 
 After ordering the parts I needed from DigiKey and ordering my board from JLCPCB, I soldered each component to the PCB. I messed up the first board I made by ripping up the D+ pad on the ESP32 footprint, and I similarly ripped up a pad on my inductor during my second attempt, but I was able to save the board, as shown in **Figure 6** below. I utilized flux, solder paste, solder wick, and a reflow gun to get everything soldered, and I learned a lot about the issues that come from overheating a board and selecting parts that are hard to solder by hand (the 0805 capacitors and the inductor). 
 
