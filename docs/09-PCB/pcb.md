@@ -42,4 +42,4 @@ Below are pictures I took of my completed PCB, which I verified to show that the
 
 ## Resources
 
-The PCB layers PDF is available [*here*](hmi_subsystem_314_pcb.pdf), the Gerber ZIP folder is available [*here](JacobAlger202.zip), and the Test Code ZIP folder is available [*here*](esp32-test-code.zip).
+The PCB layers PDF is available [*here*](hmi_subsystem_314_pcb.pdf), the Gerber ZIP folder is available [*here*](JacobAlger202.zip), and the Test Code ZIP folder is available [*here*](esp32-test-code.zip).
