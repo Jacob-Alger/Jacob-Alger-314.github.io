@@ -1,5 +1,5 @@
 ---
-title: Module's PCB
+title: HMI PCB
 ---
 
 ## PCB
