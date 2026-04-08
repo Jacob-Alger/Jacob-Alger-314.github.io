@@ -80,8 +80,8 @@ nav:
   - Schematic: 07-Schematic/schematic.md
   - API: 08-API/API.md
   - PCB: 09-PCB/pcb.md
-  - Module Verification: 10-Module-Verification/Module-Verification.md
-  - Reflection: 11-Reflection/Reflection.md
+#  - Module Verification: 10-Module-Verification/Module-Verification.md
+#  - Reflection: 11-Reflection/Reflection.md
   - Appendix: Appendix/index.md
       #- A1 Component Selection: Component-Selection/Component-Selection-Process.md
       #- A2a Microcontroller Selection: 02-Microcontroller-Selection/esp-32-table.md
