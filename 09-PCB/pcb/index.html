@@ -767,7 +767,11 @@
   <h1>PCB</h1>
 
 <h2 id="pcb">PCB</h2>
-<p>After ordering the parts I needed from DigiKey and ordering my board from JLCPCB, I soldered each component to the PCB. I messed up the first board I made by ripping up the D+ pad on the ESP32 footprint, and I similarly ripped up a pad on my inductor during my second attempt, but I was able to save the board, as shown in <strong>Figure 6</strong> below. I utilized flux, solder paste, solder wick, and a reflow gun to get everything soldered, and I learned a lot about the issues that come from overheating a board and selecting parts that are hard to solder by hand (the 0805 capacitors and the inductor). You can view a PDF of all of the following pictures, the Gerber files used to manufacture my board, and the test code I used to verify functionality of my board below in the <em>Resources</em> section.</p>
+<p>After ordering the parts I needed from DigiKey and ordering my board from JLCPCB, I soldered each component to the PCB. I messed up the first board I made by ripping up the D+ pad on the ESP32 footprint, and I similarly ripped up a pad on my inductor during my second attempt, but I was able to save the board, as shown in <strong>Figure 6</strong> below. I utilized flux, solder paste, solder wick, and a reflow gun to get everything soldered, and I learned a lot about the issues that come from overheating a board and selecting parts that are hard to solder by hand (the 0805 capacitors and the inductor). </p>
+<p>After soldering everything together to my board, I tested that my voltage regulator worked, and that my ESP was programmable. I created code to test each button press and display them on the OLED screen, which shows that I can do everything I need for the Human-Machine Interface for the CropSCOUT rover.</p>
+<blockquote>
+<p>You can view a PDF of all of the following pictures, the Gerber files used to manufacture my board, and the test code I used to verify functionality of my board below in the <em>Resources</em> section.</p>
+</blockquote>
 <p>Below are the KiCad front and bottom copper layers of my board, where all my traces reside <strong>(Figures 1 &amp; 2)</strong>. I learned to use vias, which proved very useful in designing this PCB.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_pcb_front.png" data-desc-position="bottom"><img alt="pcb front layer" src="../hmi_subsystem_pcb_front.png"></a>
 <strong>Figure 1: KiCad Top Layer of the PCB</strong></p>
@@ -788,7 +792,7 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_pcb_pic_iso.jpg" data-desc-position="bottom"><img alt="pcb isometric picture" src="../hmi_subsystem_314_pcb_pic_iso.jpg"></a>
 <strong>Figure 8: Picture of an Isometric view of my PCB</strong></p>
 <h2 id="resources">Resources</h2>
-<p>PCB layer <a href="../hmi_subsystem_314_pcb.pdf">PDF</a>, <a href="../JacobAlger202.zip">Gerber ZIP</a> folder, and <a href="">Test Code Zip</a> folder.</p>
+<p>PCB layer <a href="../hmi_subsystem_314_pcb.pdf">PDF</a>, <a href="../JacobAlger202.zip">Gerber ZIP</a> folder, and <a href="../esp32-test-code.zip">Test Code Zip</a> folder.</p>
 
 
 
