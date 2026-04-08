@@ -767,24 +767,28 @@
   <h1>PCB</h1>
 
 <h2 id="pcb">PCB</h2>
+<p>After ordering the parts I needed from DigiKey and ordering my board from JLCPCB, I soldered each component to the PCB. I messed up the first board I made by ripping up the D+ pad on the ESP32 footprint, and I similarly ripped up a pad on my inductor during my second attempt, but I was able to save the board, as shown in <strong>Figure 6</strong> below. I utilized flux, solder paste, solder wick, and a reflow gun to get everything soldered, and I learned a lot about the issues that come from overheating a board and selecting parts that are hard to solder by hand (the 0805 capacitors and the inductor). You can view a PDF of all of the following pictures, the Gerber files used to manufacture my board, and the test code I used to verify functionality of my board below in the <em>Resources</em> section.</p>
+<p>Below are the KiCad front and bottom copper layers of my board, where all my traces reside <strong>(Figures 1 &amp; 2)</strong>. I learned to use vias, which proved very useful in designing this PCB.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_pcb_front.png" data-desc-position="bottom"><img alt="pcb front layer" src="../hmi_subsystem_pcb_front.png"></a>
-<strong>Figure 1</strong></p>
+<strong>Figure 1: KiCad Top Layer of the PCB</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_pcb_back.png" data-desc-position="bottom"><img alt="pcb back layer" src="../hmi_subsystem_pcb_back.png"></a>
-<strong>Figure 2</strong></p>
+<strong>Figure 2: KiCad Bottom Layer of the PCB</strong></p>
+<p>Below is the KiCad 3D viewer of my PCB, which I found useful for spacing components on my board <strong>(Figures 3, 4, &amp; 5)</strong>. I used the STL files provided by DigiKey and preinstalled in KiCad to generate a 3D model for each footprint.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_3dpcb_top.png" data-desc-position="bottom"><img alt="pcb front 3D" src="../hmi_subsystem_314_3dpcb_top.png"></a>
-<strong>Figure 3</strong></p>
+<strong>Figure 3: KiCad 3D Viewer Top Layer of the PCB</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_3dpcb_bot.png" data-desc-position="bottom"><img alt="pcb back 3D" src="../hmi_subsystem_314_3dpcb_bot.png"></a>
-<strong>Figure 4</strong></p>
+<strong>Figure 4: KiCad 3D Viewer Bottom Layer of the PCB</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_3dpcb_iso.png" data-desc-position="bottom"><img alt="pcb isometric 3D" src="../hmi_subsystem_314_3dpcb_iso.png"></a>
-<strong>Figure 5</strong></p>
+<strong>Figure 5: KiCad 3D Viewer Isometric View of the PCB</strong></p>
+<p>Below are pictures I took of my completed PCB, which I verified to show that the voltage is properly regulated and that my ESP32 is programmable <strong>(Figures 6, 7, &amp; 8)</strong>. You can see the wire I had to add to fix the ripped-up pad of the inductor, and the jumpers that I am storing on my currently unused spare headers. I also found that pin 39, the Spare1 header pin, was bridged to ground (pin 40) after using the reflow gun on the ESP32. This didn't cause any issues, but I chose not to solder a header pin to that GPIO so I wouldn't accidentally use it.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_pcb_pib_top.jpg" data-desc-position="bottom"><img alt="pcb front picture" src="../hmi_subsystem_314_pcb_pib_top.jpg"></a>
-<strong>Figure 6</strong></p>
+<strong>Figure 6: Picture of the Top of my PCB</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_pcb_pic_bot.jpg" data-desc-position="bottom"><img alt="pcb back picture" src="../hmi_subsystem_314_pcb_pic_bot.jpg"></a>
-<strong>Figure 7</strong></p>
+<strong>Figure 7: Picture of the Bottom of my PCB</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_pcb_pic_iso.jpg" data-desc-position="bottom"><img alt="pcb isometric picture" src="../hmi_subsystem_314_pcb_pic_iso.jpg"></a>
-<strong>Figure 3</strong></p>
+<strong>Figure 8: Picture of an Isometric view of my PCB</strong></p>
 <h2 id="resources">Resources</h2>
-<p><a href="../hmi_subsystem_314_pcb.pdf">PDF</a></p>
+<p>PCB layer <a href="../hmi_subsystem_314_pcb.pdf">PDF</a>, <a href="../JacobAlger202.zip">Gerber ZIP</a> folder, and <a href="">Test Code Zip</a> folder.</p>
 
 
 
