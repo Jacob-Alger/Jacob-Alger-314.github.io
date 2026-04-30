@@ -2,13 +2,13 @@
 title: Reflection
 ---
 
-## Review of Module's Sucess
+## Review of Module's Success
 
-dfgh
+...
 
-## Version 2.0
+## Microcontroller/Module Startup Tip
 
-dfghj
+...
 
 ## Lessons Learned
 

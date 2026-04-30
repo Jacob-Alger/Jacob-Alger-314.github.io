@@ -2,4 +2,4 @@
 title: Hardware V2.0
 ---
 
-## Overview
+## Version 2.0
