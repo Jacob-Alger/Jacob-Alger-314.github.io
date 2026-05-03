@@ -32,13 +32,13 @@ title: Resources
 
 ### HMI Lab Test Video
 
-[![HMI Lab Test Video](https://img.youtube.com/vi/egof20Ow660/maxresdefault.jpg)](https://youtube.com/watch?v=egof20Ow660)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/egof20Ow660" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br><br>
 
 ### Controller Boot Video
 
-[![Controller Boot Video](https://img.youtube.com/vi/7NJjS0TonDE/maxresdefault.jpg)](https://youtube.com/watch?v=7NJjS0TonDE)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7NJjS0TonDE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## CAD for 3D Printing
 
