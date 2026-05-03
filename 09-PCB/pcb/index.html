@@ -895,7 +895,7 @@
 <strong>Figure 4: KiCad 3D Viewer Bottom Layer of the PCB</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_3dpcb_iso.png" data-desc-position="bottom"><img alt="pcb isometric 3D" src="../hmi_subsystem_314_3dpcb_iso.png"></a>
 <strong>Figure 5: KiCad 3D Viewer Isometric View of the PCB</strong></p>
-<p>Below are pictures I took of my completed PCB, which I verified to show that the voltage is properly regulated and that my ESP32 is programmable <strong>(Figures 6, 7, &amp; 8)</strong>. You can see the wire I had to add to fix the ripped-up pad of the inductor, and the jumpers that I am storing on my currently unused spare headers. I also found that pin 39, the Spare1 header pin, was bridged to ground (pin 40) after using the reflow gun on the ESP32. This didn't cause any issues, but I chose not to solder a header pin to that GPIO so I wouldn't accidentally use it.</p>
+<p>Below are pictures I took of my completed PCB, which I verified to show that the voltage is properly regulated and that my ESP32 is programmable <strong>(Figures 6, 7, &amp; 8)</strong>. You can see the wire I had to add to fix the ripped-up pad of the inductor, and the jumpers that I am storing on my currently unused spare headers. I also found that pin 39, the Spare1 header pin, was bridged to ground of the ESP32-S3 (pin 40) after using the reflow gun. This didn't cause any issues, but I chose not to solder a header pin to that GPIO so I wouldn't accidentally use it.</p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_pcb_pib_top.jpg" data-desc-position="bottom"><img alt="pcb front picture" src="../hmi_subsystem_314_pcb_pib_top.jpg"></a>
 <strong>Figure 6: Picture of the Top of my PCB</strong></p>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../hmi_subsystem_314_pcb_pic_bot.jpg" data-desc-position="bottom"><img alt="pcb back picture" src="../hmi_subsystem_314_pcb_pic_bot.jpg"></a>
@@ -904,6 +904,7 @@
 <strong>Figure 8: Picture of an Isometric view of my PCB</strong></p>
 <h2 id="resources">Resources</h2>
 <p>The PCB layers PDF is available <a href="../hmi_subsystem_314_pcb.pdf"><em>here</em></a>, the Gerber ZIP folder is available <a href="../JacobAlger202.zip"><em>here</em></a>, and the Test Code ZIP folder is available <a href="../esp32-test-code.zip"><em>here</em></a>.</p>
+<p>The ECAD project is available <a href="docs/07-Schematic/hmi_subsystem_314-final.zip"><em>here</em></a>, and also available on the Schematic Page, and Resources Page.</p>
 
 
 
