@@ -60,7 +60,25 @@ My subsystem, the Human-Machine Interface, will need to facilitate device contro
 | LED PWM (LEDC)            | Any GPIO pins via GPIO Matrix                                             | PWM channels can be output on virtually any GPIO. |
 | Motor PWM (MCPWM)         | Any GPIO pins via GPIO Matrix                                             | MCPWM channels are assignable via GPIO Matrix. |
 
+### Final Pins and Peripherals
 
+*Table 3: Pins and Peripherals Used*
 
-
-
+| Peripheral | GPIO | Module Pin # | Direction | Connected To | Notes |
+|------------|------|-------------|-----------|--------------|-------|
+| UART2 TX | IO17 | 10 | Output | Daisy-chain UART bus | Assigned via GPIO Matrix; 9600 baud, 8N1 |
+| UART2 RX | IO18 | 11 | Input | Daisy-chain UART bus | Assigned via GPIO Matrix; internal pull-up enabled |
+| SoftI2C SCL | IO13 | 21 | Output | SSD1306 OLED display | Software I2C via GPIO Matrix; clock line |
+| SoftI2C SDA | IO14 | 22 | Bidirectional | SSD1306 OLED display | Software I2C via GPIO Matrix; data line |
+| LED PWM (LEDC) | IO10 | 18 | Output | Blue LED | GPIO Matrix; 1000 Hz PWM; duty_u16 controls brightness |
+| GPIO Output | IO12 | 20 | Output | Red LED | Heartbeat; toggled by Hardware Timer 0 at 1 Hz |
+| GPIO Input | IO9 | 17 | Input | Comm subsystem wifi_ready signal | Internal pull-down; HIGH = MQTT handshake complete |
+| GPIO Input | IO4 | 4 | Input | Button UP | Active LOW; external pull-up; IRQ falling edge |
+| GPIO Input | IO5 | 5 | Input | Button RIGHT | Active LOW; external pull-up; IRQ falling edge |
+| GPIO Input | IO6 | 6 | Input | Button DOWN | Active LOW; external pull-up; IRQ falling edge |
+| GPIO Input | IO7 | 7 | Input | Button LEFT | Active LOW; external pull-up; IRQ falling edge |
+| GPIO Input | IO8 | 8 | Input | Button MENU | Active LOW; external pull-up; IRQ falling edge; mode cycle / shift key |
+| GPIO Input | IO11 | 19 | Input | Button DEBUG | Active LOW; external pull-up; IRQ falling edge |
+| GPIO Input | IO15 | 8 | Input | Button SELECT | Active LOW; external pull-up; IRQ falling edge |
+| GPIO Input | IO16 | 9 | Input | Button BACK | Active LOW; external pull-up; IRQ falling edge |
+| Hardware Timer 0 | — | — | Internal | Red LED heartbeat callback | PERIODIC mode; 1000 ms period; no dedicated GPIO |

@@ -26,8 +26,6 @@ title: Resources
   </iframe>
 </p>
 
-**Showcase demo narrated by Jacob Alger & Asadbek Ruziev**
-
 <br><br>
 
 ### HMI Lab Test Video

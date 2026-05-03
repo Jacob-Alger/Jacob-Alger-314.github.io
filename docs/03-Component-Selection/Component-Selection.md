@@ -6,6 +6,14 @@ title: HMI Selected Major Components
 
 The following sections are the selected major components necessary for my Human-Machine Interface Subsystem. I need to be able to regulate input power using a 3.3-V Switching Regulator from a Barrel Jack Adapter, powered by a Wall Supply AC/DC barrel jack cord. Then, I need to use the regulated 3.3 Volts to power an OLED Screen to display the data and control a microcontroller, which will use I2C to communicate with the OLED and interpret digital inputs from push buttons, allowing the user to control the rover and navigate the menus. The following page details my product selection process of determining which of the three selected components is the best for my subsystem.
 
+*Table 1: Final Summary Table for Active Components Only*
+
+| Component Type | Chosen Component | Price |
+|----------------|------------------|-------|
+| Switching Voltage Regulator | LM2575D2T-3.3R4G | $2.16 |
+| Barrel Jack Adapter | PJ-102AH | $0.59 |
+| OLED Screen | GME12864-17 | Given In Class |
+
 ## Power Management
 
 ### **Switching Voltage Regulator**
