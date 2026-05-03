@@ -638,6 +638,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Pinout Diagram and Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#final-pins-and-peripherals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Pins and Peripherals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -886,6 +901,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Pinout Diagram and Table">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#final-pins-and-peripherals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Pins and Peripherals
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1076,6 +1106,150 @@
 <td>Motor PWM (MCPWM)</td>
 <td>Any GPIO pins via GPIO Matrix</td>
 <td>MCPWM channels are assignable via GPIO Matrix.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="final-pins-and-peripherals">Final Pins and Peripherals</h3>
+<p><em>Table 3: Pins and Peripherals Used</em></p>
+<table>
+<thead>
+<tr>
+<th>Peripheral</th>
+<th>GPIO</th>
+<th>Module Pin #</th>
+<th>Direction</th>
+<th>Connected To</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UART2 TX</td>
+<td>IO17</td>
+<td>10</td>
+<td>Output</td>
+<td>Daisy-chain UART bus</td>
+<td>Assigned via GPIO Matrix; 9600 baud, 8N1</td>
+</tr>
+<tr>
+<td>UART2 RX</td>
+<td>IO18</td>
+<td>11</td>
+<td>Input</td>
+<td>Daisy-chain UART bus</td>
+<td>Assigned via GPIO Matrix; internal pull-up enabled</td>
+</tr>
+<tr>
+<td>SoftI2C SCL</td>
+<td>IO13</td>
+<td>21</td>
+<td>Output</td>
+<td>SSD1306 OLED display</td>
+<td>Software I2C via GPIO Matrix; clock line</td>
+</tr>
+<tr>
+<td>SoftI2C SDA</td>
+<td>IO14</td>
+<td>22</td>
+<td>Bidirectional</td>
+<td>SSD1306 OLED display</td>
+<td>Software I2C via GPIO Matrix; data line</td>
+</tr>
+<tr>
+<td>LED PWM (LEDC)</td>
+<td>IO10</td>
+<td>18</td>
+<td>Output</td>
+<td>Blue LED</td>
+<td>GPIO Matrix; 1000 Hz PWM; duty_u16 controls brightness</td>
+</tr>
+<tr>
+<td>GPIO Output</td>
+<td>IO12</td>
+<td>20</td>
+<td>Output</td>
+<td>Red LED</td>
+<td>Heartbeat; toggled by Hardware Timer 0 at 1 Hz</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO9</td>
+<td>17</td>
+<td>Input</td>
+<td>Comm subsystem wifi_ready signal</td>
+<td>Internal pull-down; HIGH = MQTT handshake complete</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO4</td>
+<td>4</td>
+<td>Input</td>
+<td>Button UP</td>
+<td>Active LOW; external pull-up; IRQ falling edge</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO5</td>
+<td>5</td>
+<td>Input</td>
+<td>Button RIGHT</td>
+<td>Active LOW; external pull-up; IRQ falling edge</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO6</td>
+<td>6</td>
+<td>Input</td>
+<td>Button DOWN</td>
+<td>Active LOW; external pull-up; IRQ falling edge</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO7</td>
+<td>7</td>
+<td>Input</td>
+<td>Button LEFT</td>
+<td>Active LOW; external pull-up; IRQ falling edge</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO8</td>
+<td>8</td>
+<td>Input</td>
+<td>Button MENU</td>
+<td>Active LOW; external pull-up; IRQ falling edge; mode cycle / shift key</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO11</td>
+<td>19</td>
+<td>Input</td>
+<td>Button DEBUG</td>
+<td>Active LOW; external pull-up; IRQ falling edge</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO15</td>
+<td>8</td>
+<td>Input</td>
+<td>Button SELECT</td>
+<td>Active LOW; external pull-up; IRQ falling edge</td>
+</tr>
+<tr>
+<td>GPIO Input</td>
+<td>IO16</td>
+<td>9</td>
+<td>Input</td>
+<td>Button BACK</td>
+<td>Active LOW; external pull-up; IRQ falling edge</td>
+</tr>
+<tr>
+<td>Hardware Timer 0</td>
+<td>—</td>
+<td>—</td>
+<td>Internal</td>
+<td>Red LED heartbeat callback</td>
+<td>PERIODIC mode; 1000 ms period; no dedicated GPIO</td>
 </tr>
 </tbody>
 </table>
