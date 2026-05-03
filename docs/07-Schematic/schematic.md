@@ -9,10 +9,11 @@ The schematic shown in **Figure 1** is for my Human-Machine Interface subsystem.
 Overall, the schematic covers every aspect of my subsystem that will be needed, both for basic functionality and for debugging/programming. Please view the schematic in **Figure 1**and the PDF or project ZIP files in the *Resources* section below.
 
 
-![HMI schematic](hmi_subsystem_314-rev4.png){style width:"350" height:"300;"}
+![HMI schematic](hmi_subsystem_314-final.png){style width:"350" height:"300;"}
 **Figure 1:** Human-Machine Interface Schematic.
 
+> Note: The schematic mentions "BT_Connect" and "BT_Status", these are artifacts from when the communication module was going to use bluetooth, but due to complexities and time constraints switched to a Wi-Fi based MQTT system instead. The functionalities of these IO pins remain largely the same.
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](hmi_subsystem_314.pdf), and the Zip folder of the project [*here*](hmi_subsystem_314-rev4.zip).
+The schematic as a PDF download is available [*here*](hmi_subsystem_314.pdf), and the Zip folder of the project [*here*](hmi_subsystem_314-final.zip).
