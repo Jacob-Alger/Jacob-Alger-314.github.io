@@ -8,7 +8,13 @@ title: Resources
 
 ## Videos
 
-### Showcase Video Demo
+### Full Showcase Video Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CgNYh9vksoY?si=5lFRXKqbXAz6XXHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br><br>
+
+### HMI Showcase Short
 
 <p align="center">
   <iframe
@@ -21,12 +27,6 @@ title: Resources
 </p>
 
 **Showcase demo narrated by Jacob Alger & Asadbek Ruziev**
-
-<br><br>
-
-### Video 1: Full Showcase Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CgNYh9vksoY?si=5lFRXKqbXAz6XXHL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 ## CAD for 3D Printing
 
