@@ -44,4 +44,4 @@ Below are pictures I took of my completed PCB, which I verified to show that the
 
 The PCB layers PDF is available [*here*](hmi_subsystem_314_pcb.pdf), the Gerber ZIP folder is available [*here*](JacobAlger202.zip), and the Test Code ZIP folder is available [*here*](esp32-test-code.zip).
 
-The ECAD project is available [*here*](docs/07-Schematic/hmi_subsystem_314-final.zip), and also available on the Schematic Page, and Resources Page.
+The ECAD project is available [*here*](../07-Schematic/hmi_subsystem_314-final.zip), and also available on the Schematic Page, and Resources Page.
