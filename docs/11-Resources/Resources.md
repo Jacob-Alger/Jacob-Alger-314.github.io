@@ -14,7 +14,7 @@ title: Resources
 
 <br><br>
 
-### HMI Showcase Short
+### HMI Showcase Video
 
 <p align="center">
   <iframe
@@ -27,6 +27,18 @@ title: Resources
 </p>
 
 **Showcase demo narrated by Jacob Alger & Asadbek Ruziev**
+
+<br><br>
+
+### HMI Lab Test Video
+
+[![HMI Lab Test Video](https://img.youtube.com/vi/egof20Ow660/maxresdefault.jpg)](https://youtube.com/watch?v=egof20Ow660)
+
+<br><br>
+
+### Controller Boot Video
+
+[![Controller Boot Video](https://img.youtube.com/vi/7NJjS0TonDE/maxresdefault.jpg)](https://youtube.com/watch?v=7NJjS0TonDE)
 
 ## CAD for 3D Printing
 
