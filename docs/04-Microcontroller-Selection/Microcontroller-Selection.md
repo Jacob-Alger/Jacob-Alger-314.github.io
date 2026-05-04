@@ -3,7 +3,7 @@ title: HMI Microcontroller Selection
 ---
 ## Selected Microcontroller
 
-* Peripherals Needed: I2C, UART, GPIO (~10), USB, Bluetooth
+* Peripherals Needed: I2C, UART, GPIO (~10), USB, Bluetooth, Wi-Fi
 * **ESP32-S3-WROOM-1-N4**: 36 GPIOs, *“ESP32-S3 integrates a rich set of peripherals including SPI, LCD, Camera interface, UART, I2C, I2S, remote control, pulse counter, LED PWM, USB Serial/JTAG, MCPWM, SD/MMC host controller, TWAI® controller (compatible with ISO 11898-1, i.e., CAN Specification 2.0), ADC, touch sensor, and temperature sensor. It also includes a full-speed USB 2.0 On-The-Go (OTG) interface to enable USB communication.”*
 
 I have selected the ESP32-S3-WROOM-1-N4 because I know it will cover everything I need for my subsystem. I have reached this conclusion using the reasoning and selection process outlined below. The ESP32-S3-WROOM-1-N4 supports I2C, UART, and GPIO, which is everything I need to build my subsystem. If later I realize there's an issue with this process I didn't see, I will redo it and select a new microcontroller type, but it will most likely be an ESP32, as that is what most OLED screens prefer.

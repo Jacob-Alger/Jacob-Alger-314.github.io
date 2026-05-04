@@ -13,7 +13,7 @@ The subsystem features a DC barrel jack power supply and a power supply jumper t
 <br><br>
 My ESP32 will be programmed via a USB Micro B receptacle, as shown in the Block Diagram. There are the boot and enable buttons required to flash and program the ESP32 microcontroller. The ESP32 is also capable of I2C serial communication with the OLED screen and has plenty of I/Os and peripherals, as illustrated in the block diagram.
 <br><br>
-Since I am making the HMI, my subsystem is a separate remote controller from the rover, so it is paired with the Communication subsystem to communicate with the rover using Bluetooth. The full connection information is available in the Team Block Diagram on the Team 202 Datasheet.
+Since I am making the HMI, my subsystem is a separate remote controller from the rover, so it is paired with the Communication subsystem to communicate with the rover using MQTT. The full connection information is available in the Team Block Diagram on the Team 202 Datasheet.
 <br><br>
 
 ## Block Diagram 
