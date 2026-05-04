@@ -17,6 +17,10 @@ for<br>
 **Submission: May 4, 2026**
 </center>
 
+![Picture of Controller](../11-Resources/Showcase-Controller.jpg)
+
+![Picture of PCB](../09-PCB/hmi_subsystem_314_pcb_pib_top.jpg)
+
 ## Introduction
 
 This datasheet serves as a collection of my individual work toward this project. It includes each step of development for my subsystem, which is the Human-Machine Interface for the Exploration Device, the CropScout. I will frequently shorten Human-Machine Interface to HMI throughout this datasheet, so please be aware of what I mean when I say HMI. Below you can view a project summary, my contribution to the project, and navigation to both my team's datasheet and the sections of this datasheet.
@@ -41,4 +45,7 @@ To view the pages of this datasheet, which detail the process I went through to 
 * To see the bill of materials for my entire subsystem, view the [*BOM Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/06-BOM/BOM/)
 * To see my schematic for my subsystem, view the [*Schematic Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/07-Schematic/schematic/)
 * To see my API for the communication protocols across the system, view the [*API Page*.](https://jacob-alger.github.io/Jacob-Alger-314.github.io/08-API/API/)
-
+* To see my Printed Circuit Board design and population process, view the [*PCB Page*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/09-PCB/pcb/)
+* To see what I would do if I were to redo this project, view the [*Hardware V2.0 Page*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/10-Hardware-V2-0/Hardware-V2-0/)
+* To see my code, CAD files, and presentation videos, view the [*Resources Page*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/11-Resources/Resources/)
+* To see my reflection of this project and class, view the [*Reflection Page*](https://jacob-alger.github.io/Jacob-Alger-314.github.io/12-Reflection/Reflection/)
