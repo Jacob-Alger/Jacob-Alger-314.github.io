@@ -17,9 +17,9 @@ for<br>
 **Submission: May 4, 2026**
 </center>
 
-![Picture of Controller](../11-Resources/Showcase-Controller.jpg)
+![Picture of Controller](docs/11-Resources/Showcase-Controller.jpg)
 
-![Picture of PCB](../09-PCB/hmi_subsystem_314_pcb_pib_top.jpg)
+![Picture of PCB](docs/09-PCB/hmi_subsystem_314_pcb_pib_top.jpg)
 
 ## Introduction
 
