@@ -19,7 +19,7 @@ for<br>
 
 | ![Picture of PCB](09-PCB/hmi_subsystem_314_pcb_pib_top.jpg){: width=300px height=300px} | ![Picture of Controller](11-Resources/Showcase-Controller.jpg){: width=300px height=300px} |
 |-------------------------------------------------------------|----------------------------------------------------------------|
-| Picture of Final PCB Design                                 | Picture of Controller at Innovation Showcase                   |
+| **Picture of Final PCB Design**                             | **Picture of Controller at Innovation Showcase**               |
 
 
 
