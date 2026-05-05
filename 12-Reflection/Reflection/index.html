@@ -929,7 +929,7 @@
 </ul>
 </li>
 <li><strong>Surface-mounted microcontroller</strong><ul>
-<li><strong>Yes</strong>, I included the ESP32-S3-WROOM-1-N4 microcontroller from Espressif. I used several peripherals, which can be reviewed on the Microcontroller Selection Page.</li>
+<li><strong>Yes</strong>, I included the ESP32-S3-WROOM-1-N4 microcontroller from Espressif. I used several peripherals, which are listed on the Microcontroller Selection Page.</li>
 </ul>
 </li>
 <li><strong>Wireless Communication</strong><ul>
@@ -972,7 +972,7 @@
 <ol>
 <li>Datasheets, datasheets, datasheets. Make sure that you read the datasheets, as many issues or questions you may have are probably answered there. This is very important for your voltage regulator, as each switching regulator will most likely use different components based on what you want, and the datasheet will not only provide a schematic but also information on sizing Schottky diodes, inductors, and capacitors. They are also useful for your microcontroller. For example, the ESP32-S3 datasheet states that the ground pads on the back do not need to be soldered. They only act as a potential heatsink for high-load ESP32 designs.</li>
 <li>Make sure you are communicating constantly with your teammates while making your schematic and PCB. One misunderstanding or unclarified specification can lead to a month of headaches and testing, or even a nonfunctional subsystem.</li>
-<li>Go to the Professor or TAs for clarifications or schematic reviews. Many of my teammates chose the wrong ribbon connector symbol, so we had to use jumper cables to connect. This caused one of our ESP32s to get fried when the unregulated voltage accidentally fed into the UART RX pin. The teaching team can help you spot these oversights or misunderstandings before they ruin your board.</li>
+<li>Go to the Professor or TAs for clarifications or schematic reviews. Many of my teammates chose the wrong ribbon connector symbol, so we had to use jumper cables to connect. This caused one of our ESP32s to fry when the unregulated voltage line accidentally fed into the UART RX pin. The teaching team can help you spot these oversights or misunderstandings before they ruin your board.</li>
 <li>When soldering, don't just go from smallest to largest, but also from most important to least important. On my first board, I waited until last to solder the ESP32, which caused me to misalign it, and when I tried to remove it, I melted my plastic headers and ripped up my D+ trace. This completely killed my first board, and I had to resolder. Start with the ESP or PIC, because if you mess that up, then the whole board is ruined. It's better to fail fast and all that.</li>
 <li>Think about the way you are going to solder when selecting components. For example, my inductor was very frustrating to solder because the pads were under the enclosure, and my PCB had pads that were exactly the same size. This caused me pain when soldering, and my final board even ripped up a trace because I overheated it. Think about how you might solder a part and whether you should look for a different package or redesign the footprint.</li>
 <li>Larger parts are easier to solder and find in your workspace. 0805 or 1206 parts may appear large in ECAD software, but they are tiny in real life. If this is also your first time using surface-mount components, use larger parts to avoid losing them.</li>
