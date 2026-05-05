@@ -12,8 +12,8 @@ Overall, the schematic covers every aspect of my subsystem that will be needed, 
 ![HMI schematic](hmi_subsystem_314-final.png){style width:"350" height:"300;"}
 **Figure 1:** Human-Machine Interface Schematic.
 
-> Note: The schematic mentions "BT_Connect" and "BT_Status", these are artifacts from when the communication module was going to use bluetooth, but due to complexities and time constraints switched to a Wi-Fi based MQTT system instead. The functionalities of these IO pins remain largely the same.
+> Note: The schematic mentions "BT_Connect" and "BT_Status"; these are artifacts from when the communication module was going to use Bluetooth, but due to complexities and time constraints, we switched to a Wi-Fi-based MQTT system instead. The functionalities of these IO pins remain largely the same.
 
-## Resouces
+## Resources
 
-The schematic as a PDF download is available [*here*](hmi_subsystem_314.pdf), and the Zip folder of the project [*here*](hmi_subsystem_314-final.zip).
+The schematic as a PDF download is available [*here*](hmi_subsystem_314.pdf), and the Zip folder of the KiCad project [*here*](hmi_subsystem_314-final.zip).
