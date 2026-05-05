@@ -168,9 +168,9 @@ The received messages are mainly the returned sensor data, but there are also a 
 |------------|-----------|-----------|-----------|
 |            | Name      | Type      | Data      |
 |            | AA:       | IL:       | ##;        |
-| Min        |           |           | -180;     |
-| Max        |           |           | 180;      |
-| Example    | AA:       | IL:       | 90;       |
+| Min        |           |           | -700;     |
+| Max        |           |           | 700;      |
+| Example    | AA:       | IL:       | 200;       |
 
 ### Message Type 5 -- Arm Status
 
