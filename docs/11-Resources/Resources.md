@@ -6,6 +6,10 @@ title: Resources
 
 [HMI Code for ESP32-S3 (Programmed using VSCode)](hmi_subsystem_code.zip)
 
+## KiCad Project
+
+[ZIP folder containing the entire KiCad project](../07-Schematic/hmi_subsystem_314-final.zip)
+
 ## Videos
 
 ### Full Showcase Video Demo
