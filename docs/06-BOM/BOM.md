@@ -47,7 +47,7 @@ The bill of materials for my entire subsystem is shown in* Table 1*. It includes
 
 > Note: This table scrolls side to side. Please scroll to see all of the information.
 
-## Resouces
+## Resources
 
 The Bill of Materials is available as a PDF [*here*](../06-BOM/EGR314-HMI_BOM.pdf) and as an XLSX download [*here*](../06-BOM/EGR314-HMI_BOM.xlsx).
 
