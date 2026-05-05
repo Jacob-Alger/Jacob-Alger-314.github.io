@@ -76,7 +76,7 @@ The following sections are the selected major components necessary for my Human-
 
 ![LM2575D2T-3.3R4G](../03-Component-Selection/VoltageRegulators/LM2575D2T-3.3R4G.webp)
 
-***Rationale:*** I have selected the LM2575D2T-3.3R4G because it is not only one of the least expensive option but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem. The other voltage regulators required inductors and diodes that were hard to source, so this option that matches the components we used in class is the best fit.
+***Rationale:*** I have selected the LM2575D2T-3.3R4G because it is not only one of the least expensive options but also provides everything I need from a voltage regulator. It will need the capacitors and inductors that the switching voltage regulator we used in class needed, but that should not be a problem, as I can duplicate my previous work on my subsystem. The other voltage regulators required inductors and diodes that were hard to source, so this option, which matches the components we used in class, is the best fit.
 
 ### **Barrel Jack Adapter**
 
