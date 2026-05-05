@@ -29,7 +29,7 @@ Below is the KiCad 3D viewer of my PCB, which I found useful for spacing compone
 ![pcb isometric 3D](../09-PCB/hmi_subsystem_314_3dpcb_iso.png)
 **Figure 5: KiCad 3D Viewer Isometric View of the PCB**
 
-Below are pictures I took of my completed PCB, which I verified to show that the voltage is properly regulated and that my ESP32 is programmable **(Figures 6, 7, & 8)**. You can see the wire I had to add to fix the ripped-up pad of the inductor, and the jumpers that I am storing on my currently unused spare headers. I also found that pin 39, the Spare1 header pin, was bridged to ground of the ESP32-S3 (pin 40) after using the reflow gun. This didn't cause any issues, but I chose not to solder a header pin to that GPIO so I wouldn't accidentally use it.
+Below are pictures I took of my completed PCB, which I verified to show that the voltage is properly regulated and that my ESP32 is programmable **(Figures 6, 7, & 8)**. You can see the wire I had to add to fix the ripped-up pad of the inductor, and the jumpers that I am storing on my currently unused spare headers. I also found that pin 39, the Spare1 header pin, was bridged to the ESP32-S3's ground (pin 40) after using the reflow gun. This didn't cause any issues, but I chose not to solder a header pin to that GPIO so I wouldn't accidentally use it.
 
 ![pcb front picture](../09-PCB/hmi_subsystem_314_pcb_pib_top.jpg)
 **Figure 6: Picture of the Top of my PCB**
@@ -44,4 +44,4 @@ Below are pictures I took of my completed PCB, which I verified to show that the
 
 The PCB layers PDF is available [*here*](hmi_subsystem_314_pcb.pdf), the Gerber ZIP folder is available [*here*](JacobAlger202.zip), and the Test Code ZIP folder is available [*here*](esp32-test-code.zip).
 
-The ECAD project is available [*here*](../07-Schematic/hmi_subsystem_314-final.zip), and also available on the Schematic Page, and Resources Page.
+The ECAD project is available [*here*](../07-Schematic/hmi_subsystem_314-final.zip), and also available on the Schematic Page and Resources Page.
