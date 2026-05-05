@@ -11,10 +11,10 @@ The following table, *Table 1*, documents the requirements the Human Machine Int
 
 | **Requirement Description** | **Measure of<br> Threshold** | **Target<br>Measure** |**Stretch<br>Requirement<br>(Y-N)**|
 |-----------------------------| ----------------- | ----------------- | :-----: |
-| Surface mounted, 3.3V switching power regulator | 3.2 Volts | 3.3 Volts | No |
+| Surface-mounted, 3.3V switching power regulator | 3.2 Volts | 3.3 Volts | No |
 | Barrel Jack Adapter Power supply | Unregulated power | 9 Volts | No |
 | Jumper that switches from Barrel Jack to Upstream Power | Manual Switch | Header pin that uses connector to switch | No |
-| Surface mounted microcontroller | 1 PIC or ESP | ESP controller that can manage every requirement | No |
+| Surface-mounted microcontroller | 1 PIC or ESP | ESP controller that can manage every requirement | No |
 | Wireless Communication | Able to send or receive data | Send movement instructions with less than half-second delay and receive sensor data in less than 15 seconds | No |
 | Movement Controls | Enough Buttons to move rover and control screen | D-Pad and 4 selecting buttons | No |
 | Movement Controls | Analog Stick that can move the rover in 4 directions | Full analog movement for precise control | Yes |
