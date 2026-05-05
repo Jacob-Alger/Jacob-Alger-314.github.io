@@ -62,6 +62,8 @@ My subsystem, the Human-Machine Interface, will need to facilitate device contro
 
 ### Final Pins and Peripherals
 
+*Table 3* below lists every pin and peripheral I ended up using for this project. Each peripheral also includes a physical pin, which differs from the IO pin number, as well as the functionality connected to it.
+
 *Table 3: Pins and Peripherals Used*
 
 | Peripheral | GPIO | Module Pin # | Direction | Connected To | Notes |
